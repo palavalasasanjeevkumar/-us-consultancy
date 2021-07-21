@@ -1,0 +1,1237 @@
+<nav
+  class="navbar navbar-expand-lg fixed-top navbar-transparent"
+  color-on-scroll="100"
+  id="navbar-top"
+>
+  <div class="container">
+    <div class="navbar-translate">
+      <a
+        class="navbar-brand"
+        placement="bottom"
+        [routerLink]="['/home']"
+        target="_blank"
+        tooltip="Designed and Coded by Creative Tim"
+      >
+        <span> Consulantancy• </span> Services
+      </a>
+      <button
+        aria-controls="navigation-index"
+        aria-label="Toggle navigation"
+        class="navbar-toggler navbar-toggler"
+        [attr.aria-expanded]="!isCollapsed"
+        (click)="isCollapsed = !isCollapsed"
+        id="navigation"
+        type="button"
+      >
+        <span class="navbar-toggler-bar bar1"> </span>
+        <span class="navbar-toggler-bar bar2"> </span>
+        <span class="navbar-toggler-bar bar3"> </span>
+      </button>
+    </div>
+    <div
+      class="navbar-collapse justify-content-end"
+      [collapse]="isCollapsed"
+      id="navigation"
+    >
+      <div class="navbar-collapse-header">
+        <div class="row">
+          <div class="col-6 collapse-brand"><a> BLK• </a></div>
+          <div class="col-6 collapse-close text-right">
+            <button
+              aria-controls="navigation-index"
+              aria-label="Toggle navigation"
+              class="navbar-toggler"
+              [attr.aria-expanded]="!isCollapsed"
+              (click)="isCollapsed = !isCollapsed"
+              id="navigation"
+              type="button"
+            >
+              <i class="tim-icons icon-simple-remove"> </i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-nav">
+        <li class="dropdown nav-item" dropdown>
+          <a
+            class="dropdown-toggle nav-link dropdown-toggle"
+            data-toggle="dropdown"
+            dropdownToggle
+            href="javascript:void(0)"
+          >
+            <i class="fa fa-cogs d-lg-none d-xl-none"> </i> Home
+          </a>
+          <div class="dropdown-menu dropdown-with-icons" *dropdownMenu>
+            <a
+              class="dropdown-item"
+              href=""
+            >
+              <i class="tim-icons icon-paper"> </i> Documentation
+            </a>
+            <a class="dropdown-item" [routerLink]="['/register']">
+              <i class="tim-icons icon-bullet-list-67"> </i> Register Page
+            </a>
+            <a class="dropdown-item" [routerLink]="['/landing']">
+              <i class="tim-icons icon-image-02"> </i> Landing Page
+            </a>
+            <a class="dropdown-item" [routerLink]="['/profile']">
+              <i class="tim-icons icon-single-02"> </i> Profile Page
+            </a>
+          </div>
+          </li>
+          <li class="dropdown nav-item" dropdown>
+            <a
+              class="dropdown-toggle nav-link dropdown-toggle"
+              data-toggle="dropdown"
+              dropdownToggle
+              href="javascript:void(0)"
+            >
+              <i class="fa fa-cogs d-lg-none d-xl-none"> </i> Study 
+            </a>
+          <div class="dropdown-menu dropdown-with-icons" *dropdownMenu>
+            <a
+              class="dropdown-item"
+              href=""
+            >
+              <i class="tim-icons icon-paper"> </i> Documentation
+            </a>
+            <a class="dropdown-item" [routerLink]="['/register']">
+              <i class="tim-icons icon-bullet-list-67"> </i> Register Page
+            </a>
+            <a class="dropdown-item" [routerLink]="['/landing']">
+              <i class="tim-icons icon-image-02"> </i> Landing Page
+            </a>
+            <a class="dropdown-item" [routerLink]="['/profile']">
+              <i class="tim-icons icon-single-02"> </i> Profile Page
+            </a>
+          </div>
+    </li>
+    <li class="dropdown nav-item" dropdown>
+      <a
+        class="dropdown-toggle nav-link dropdown-toggle"
+        data-toggle="dropdown"
+        dropdownToggle
+        href="javascript:void(0)"
+      >
+        <i class="fa fa-cogs d-lg-none d-xl-none"> </i> About US
+      </a>
+          <div class="dropdown-menu dropdown-with-icons" *dropdownMenu>
+            <a
+              class="dropdown-item"
+              href=""
+            >
+              <i class="tim-icons icon-paper"> </i> Documentation
+            </a>
+            <a class="dropdown-item" [routerLink]="['/register']">
+              <i class="tim-icons icon-bullet-list-67"> </i> Register Page
+            </a>
+            <a class="dropdown-item" [routerLink]="['/landing']">
+              <i class="tim-icons icon-image-02"> </i> Landing Page
+            </a>
+            <a class="dropdown-item" [routerLink]="['/profile']">
+              <i class="tim-icons icon-single-02"> </i> Profile Page
+            </a>
+          </div>
+</li>
+<li class="dropdown nav-item" dropdown>
+  <a
+    class="dropdown-toggle nav-link dropdown-toggle"
+    data-toggle="dropdown"
+    dropdownToggle
+    href="javascript:void(0)"
+  >
+    <i class="fa fa-cogs d-lg-none d-xl-none"> </i> Contact Us
+  </a>
+          <div class="dropdown-menu dropdown-with-icons" *dropdownMenu>
+            <a
+              class="dropdown-item"
+              href=""
+            >
+              <i class="tim-icons icon-paper"> </i> Documentation
+            </a>
+            <a class="dropdown-item" [routerLink]="['/register']">
+              <i class="tim-icons icon-bullet-list-67"> </i> Register Page
+            </a>
+            <a class="dropdown-item" [routerLink]="['/landing']">
+              <i class="tim-icons icon-image-02"> </i> Landing Page
+            </a>
+            <a class="dropdown-item" [routerLink]="['/profile']">
+              <i class="tim-icons icon-single-02"> </i> Profile Page
+            </a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <!-- <a
+            class="nav-link btn btn-default d-none d-lg-block"
+            href="javascript:void(0)"
+            (click)="scrollToDownload(target)"
+          >
+            <i class="tim-icons icon-cloud-download-93"> </i> Download
+          </a> -->
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="wrapper">
+  <div class="page-header header-filter">
+    <div class="squares square1"></div>
+    <div class="squares square2"></div>
+    <div class="squares square3"></div>
+    <div class="squares square4"></div>
+    <div class="squares square5"></div>
+    <div class="squares square6"></div>
+    <div class="squares square7"></div>
+    <div class="container">
+      <div class="content-center brand">
+        <h1 class="h1-seo">Consulatancy•</h1>
+        <h3>
+          <!-- A beautiful Design System for Bootstrap 4 and Angular. It's Free and
+          Open Source. -->
+          Top 10 Master’s Degrees Students Can Study Abroad in 2021
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <!-- class="section section-basic" -->
+    <div  id="basic-elements">
+      <img class="path" src="assets/img/path1.png" />
+
+      <div class="container">
+        <h2 class="title">Let’s help you live your dream</h2>
+        <div id="images">
+          
+          <div class="row">
+            <div class="col-sm-3 col-6">
+              <small class="d-block text-uppercase font-weight-bold mb-4">
+                Study London
+              </small>
+              <img
+                alt="Rounded image"
+                class="img-fluid rounded shadow"
+                [src]="imgPath4"
+                style="width: 150px;"
+              />
+            </div>
+            <div class="col-sm-3 col-6">
+              <small class="d-block text-uppercase font-weight-bold mb-4">
+                Study Canada
+              </small>
+              <img
+                alt="Rounded image"
+                class="img-fluid rounded shadow"
+                [src]="imgPath5"
+                style="width: 150px;"
+              />
+            </div>
+            <div class="col-sm-3 col-6">
+              <small class="d-block text-uppercase font-weight-bold mb-4">
+                Study US
+              </small>
+              <img
+                alt="Rounded image"
+                class="img-fluid rounded shadow"
+                [src]="imgPath6"
+                style="width: 150px;"
+              />
+            </div>
+            <div class="col-sm-3 col-6">
+              <small class="d-block text-uppercase font-weight-bold mb-4">
+                Study UK
+              </small>
+              <img
+                alt="Rounded image"
+                class="img-fluid rounded shadow"
+                [src]="imgPath7"
+                style="width: 150px;"
+              />
+            </div>
+           
+          
+           
+          </div>
+        </div> 
+        
+       
+      
+        
+        <br />
+
+        <h3>Popular courses among Indian students</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <h3  style="font-family: play;text-align: center;">Computer Sciences And IT</h3>
+           
+           <h3 style="text-align: center">Computer Science <br>Information Technology<br>Software Engineering</h3>
+           
+           
+            <br />
+
+            <h3  style="font-family: play;text-align: center;">Business and Management</h3>
+              <h3 style="text-align: center">Master of Business Administration<br>Sales and Marketing<br>Project Management</h3>
+          </div>
+          <div class="col-md-4">
+            <h3  style="font-family: play;text-align: center;">Engineering</h3>
+          <h3 style="text-align: center">Mechanical Engineering <br>Civil Engineering<br>Electrical Engineering</h3>
+           
+            <br />
+
+            <h3  style="font-family: play;text-align: center;">Health and Science</h3>
+            <h3 style="text-align: center">Medicine and Surgery <br>Dental Studies<br>Physiotherapy</h3>
+          </div>
+          <div class="col-md-4">
+            <h3  style="font-family: play;text-align: center;">Law and Legal Studies</h3>
+             <h3 style="text-align: center">Legal Studies <br>International LawBusiness <br> and Commercial</h3>
+           
+            <br />
+
+            <h3  style="font-family: play;text-align: center;">Biological and life Sciences</h3>
+            <h3 style="text-align: center">Biotechnology<br>Biological Sciences<br>Biomedical Engineering</h3>
+          </div>
+        </div>
+        
+       
+      </div>
+    </div>
+   
+     
+ 
+    
+    
+    <!-- <div class="section section-tabs"> -->
+      <div class="container">
+        <div class="title"><h3 class="mb-3">Notifications</h3></div>
+        <div class="row">
+          <div class="col-md-10 ml-auto col-xl-6 mr-auto">
+            <div class="mb-3">
+              <small class="text-uppercase font-weight-bold">
+                With icons
+              </small>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <tabset class="nav-tabs-danger">
+                  <tab>
+                    <ng-template tabHeading>
+                      <i class="tim-icons icon-spaceship"> </i> Profile
+                    </ng-template>
+                    <p>
+                      Collaboratively administrate empowered markets via
+                      plug-and-play networks. Dynamically procrastinate B2C
+                      users after installed base benefits. <br />
+
+                      <br />
+
+                      Dramatically visualize customer directed convergence
+                      without revolutionary ROI.
+                    </p>
+                  </tab>
+                  <tab>
+                    <ng-template tabHeading>
+                      <i class="tim-icons icon-settings-gear-63"> </i> Settings
+                    </ng-template>
+                    <p>
+                      Completely synergize resource taxing relationships via
+                      premier niche markets. Professionally cultivate one-to-one
+                      customer service with robust ideas. <br />
+
+                      <br />
+
+                      Dynamically innovate resource-leveling customer service
+                      for state of the art customer service.
+                    </p>
+                  </tab>
+                  <tab>
+                    <ng-template tabHeading>
+                      <i class="tim-icons icon-bag-16"> </i> Options
+                    </ng-template>
+                    <p>
+                      Efficiently unleash cross-media information without
+                      cross-media value. Quickly maximize timely deliverables
+                      for real-time schemas. <br />
+
+                      <br />
+
+                      Dramatically maintain clicks-and-mortar solutions without
+                      functional solutions.
+                    </p>
+                  </tab>
+                </tabset>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10 ml-auto col-xl-6 mr-auto">
+            <div class="mb-3">
+              <small class="text-uppercase font-weight-bold"> With text </small>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <tabset class="nav-tabs-danger">
+                  <tab heading="Profile">
+                    <p>
+                      These cases are perfectly simple and easy to distinguish.
+                      In a free hour, when our power of choice is untrammelled
+                      and when nothing prevents our being able to do what we
+                      like best, every pleasure is to be welcomed and every pain
+                      avoided. <br />
+
+                      But in certain circumstances and owing to the claims of
+                      duty or the obligations of business it will frequently
+                      occur that pleasures
+                    </p>
+                  </tab>
+                  <tab heading="Settings">
+                    <p>
+                      I will be the leader of a company that ends up being worth
+                      billions of dollars, because I got the answers. I
+                      understand culture. I am the nucleus. I think thatâs a
+                      responsibility that I have, to push possibilities, to show
+                      people, this is the level that things could be at. I think
+                      thatâs a responsibility that I have, to push
+                      possibilities, to show people, this is the level that
+                      things could be at.
+                    </p>
+                  </tab>
+                  <tab heading="Options">
+                    <p>
+                      I think thatâs a responsibility that I have, to push
+                      possibilities, to show people, this is the level that
+                      things could be at. So when you get something that has the
+                      name Kanye West on it, itâs supposed to be pushing the
+                      furthest possibilities. I will be the leader of a company
+                      that ends up being worth billions of dollars, because I
+                      got the answers. I understand culture. I am the nucleus.
+                    </p>
+                  </tab>
+                </tabset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- </div> -->
+    
+    <!-- <div class="section section-notifications" id="notifications">
+      <div class="container">
+        <div class="space"></div>
+        <h3>Notifications</h3>
+        <alert
+          class="alert-with-icon"
+          [type]="'primary alert-with-icon'"
+          [dismissible]="true"
+        >
+          <span class="tim-icons icon-coins" data-notify="icon"> </span>
+          <span>
+            <b> Congrats! - </b> This is a regular notification made with
+            ".alert-primary"
+          </span>
+        </alert>
+        <alert
+          class="alert-with-icon"
+          [type]="'info alert-with-icon'"
+          [dismissible]="true"
+        >
+          <span class="tim-icons icon-trophy" data-notify="icon"> </span>
+          <span>
+            <b> Heads up! - </b> This is a regular notification made with
+            ".alert-info"
+          </span>
+        </alert>
+        <alert
+          class="alert-with-icon"
+          [type]="'success alert-with-icon'"
+          [dismissible]="true"
+        >
+          <span class="tim-icons icon-bell-55" data-notify="icon"> </span>
+          <span>
+            <b> Well done! - </b> This is a regular notification made with
+            ".alert-success"
+          </span>
+        </alert>
+        <alert
+          class="alert-with-icon"
+          [type]="'warning alert-with-icon'"
+          [dismissible]="true"
+        >
+          <span class="tim-icons icon-bulb-63" data-notify="icon"> </span>
+          <span>
+            <b> Warning! - </b> This is a regular notification made with
+            ".alert-warning"
+          </span>
+        </alert>
+        <alert
+          class="alert-with-icon"
+          [type]="'danger alert-with-icon'"
+          [dismissible]="true"
+        >
+          <span class="tim-icons icon-support-17" data-notify="icon"> </span>
+          <span>
+            <b> Oh snap! - </b> This is a regular notification made with
+            ".alert-danger"
+          </span>
+        </alert>
+      </div>
+    </div> -->
+  
+    <div class="section section-javascript" id="javascriptComponents">
+      <img class="path" src="assets/img/path5.png" />
+
+      <img class="path path1" src="assets/img/path5.png" />
+
+      <div class="container">
+        <h3 class="title mb-5">We’ll find your perfect fit</h3>
+        
+        <div class="row" >
+          <div class="col-md-3">
+           <img [src]="imgPath8" alt="">
+          </div>
+          <div class="col-md-3">
+           <img [src]="imgPath9" alt="">
+          </div>
+          <div class="col-md-3">
+           <img [src]="imgPath10" alt="">
+          </div>
+          <div class="col-md-3">
+           <img [src]="imgPath11" alt="">
+          </div>
+        </div>
+   <br>        
+        <div class="row" >
+          <div class="col-md-3">
+           <img [src]="imgPath12" alt="">
+          </div>
+          <div class="col-md-3">
+           <img [src]="imgPath13" alt="">
+          </div>
+          <div class="col-md-3">
+           <img [src]="imgPath14" alt="">
+          </div>
+          <div class="col-md-3">
+           <img [src]="imgPath15" alt="">
+          </div>
+        </div>
+        <br />
+
+        <br />
+
+        <!-- <h4 class="mb-5 mt-3">Datepicker</h4>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="datepicker-container">
+              <div class="form-group">
+                <input
+                  bsDatepicker
+                  class="form-control"
+                  data-datepicker-color="danger"
+                  [bsConfig]="{ isAnimated: true, containerClass: 'theme-red' }"
+                  [bsValue]="date"
+                  id="datepicker"
+                  type="text"
+                />
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="row">
+          <div class="col-md-6">
+            <h4 class="mb-5 mt-3">Popovers</h4>
+            <button
+              class="btn btn-default btn-sm mr-1"
+              container="body"
+              placement="top"
+              popoverTitle="Popover on top"
+              popover="Here will be some very useful information about his popover."
+              type="button"
+            >
+              On top
+            </button>
+            <button
+              class="btn btn-default btn-sm mr-1"
+              container="body"
+              placement="right"
+              popoverTitle="Popover on right"
+              popover="Here will be some very useful information about his popover.<br>
+              Here will be some very useful information about his popover."
+              type="button"
+            >
+              On right
+            </button>
+            <button
+              class="btn btn-default btn-sm mr-1"
+              container="body"
+              placement="bottom"
+              popoverTitle="Popover on bottom"
+              popover="Here will be some very useful information about his popover."
+              type="button"
+            >
+              On bottom
+            </button>
+            <button
+              class="btn btn-default btn-sm"
+              container="body"
+              placement="left"
+              popoverTitle="Popover on left"
+              popover="Here will be some very useful information about his popover."
+              type="button"
+            >
+              On left
+            </button>
+          </div>
+          <div class="col-md-6">
+            <h4 class="mb-5 mt-3">Tooltips</h4>
+            <button
+              class="btn btn-default btn-tooltip btn-sm mr-1"
+              data-animation="true"
+              data-container="body"
+              data-delay="100"
+              placement="left"
+              tooltip="Tooltip on left"
+              type="button"
+            >
+              On left
+            </button>
+            <button
+              class="btn btn-default btn-tooltip btn-sm mr-1"
+              data-animation="true"
+              data-container="body"
+              placement="top"
+              tooltip="Tooltip on top"
+              type="button"
+            >
+              On top
+            </button>
+            <button
+              class="btn btn-default btn-tooltip btn-sm mr-1"
+              data-animation="true"
+              data-container="body"
+              placement="bottom"
+              tooltip="Tooltip on bottom"
+              type="button"
+            >
+              On bottom
+            </button>
+            <button
+              class="btn btn-default btn-tooltip btn-sm"
+              data-animation="true"
+              data-container="body"
+              placement="right"
+              tooltip="Tooltip on right"
+              type="button"
+            >
+              On right
+            </button>
+            <div class="clearfix"></div>
+            <br />
+
+            <br />
+          </div>
+        </div> -->
+      </div>
+      <div class="section">
+        <div class="container">
+          <div class="title"><h3>Carousel</h3></div>
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-5 mb-5 mb-lg-0">
+              <h1 class="text-white font-weight-light">Bootstrap carousel</h1>
+              <p class="text-white mt-4">
+                Black Design comes with three pre-built pages to help you get
+                started faster. You can change the text and images and you're
+                good to go.
+              </p>
+              <a
+                class="btn btn-warning mt-4"
+                href="https://demos.creative-tim.com/blk-design-system-angular/#/documentation/alerts"
+              >
+                See all components
+              </a>
+            </div>
+            <div class="col-lg-6">
+              <carousel [showIndicators]="false">
+                <slide>
+                  <img
+                    alt="First slide"
+                    class="d-block w-100"
+                    src="assets/img/denys.jpg"
+                  />
+                </slide>
+                <slide>
+                  <img
+                    alt="Second slide"
+                    class="d-block w-100"
+                    src="assets/img/fabien-bazanegue.jpg"
+                  />
+                </slide>
+                <slide>
+                  <img
+                    alt="Third slide"
+                    class="d-block w-100"
+                    src="assets/img/mark-finn.jpg"
+                  />
+                </slide>
+              </carousel>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section-nucleo-icons">
+      <img class="path" src="assets/img/path3.png" />
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-12">
+            <h2 class="title">About Us</h2>
+            <h4 class="description">
+              BLK• Design System PRO comes with 100 custom icons made by our
+              friends from NucleoApp. The official package contains over 2.100
+              thin icons which are looking great in combination with BLK• Design
+              System PRO Make sure you check all of them and use those that you
+              like the most.
+            </h4>
+            <div class="btn-wrapper">
+              <a
+                class="btn btn-danger btn-round mr-1"
+                href="https://demos.creative-tim.com/blk-design-system-angular/#/documentation/icons"
+                target="_blank"
+              >
+                View Demo Icons
+              </a>
+              <a
+                class="btn btn-danger btn-simple btn-round btn-lg"
+                href="https://nucleoapp.com/?ref=1712"
+                target="_blank"
+              >
+                View All Icons
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="blur-hover">
+          <a
+            href="https://demos.creative-tim.com/blk-design-system-angular/#/documentation/icons"
+            class="text-danger"
+          >
+            <div class="icons-container blur-item on-screen mt-5">
+              <i class="icon tim-icons icon-coins"> </i>
+              <i class="icon icon-sm tim-icons icon-spaceship"> </i>
+              <i class="icon icon-sm tim-icons icon-money-coins"> </i>
+              <i class="icon icon-sm tim-icons icon-link-72"> </i>
+              <i class="icon tim-icons icon-send"> </i>
+              <i class="icon tim-icons icon-mobile"> </i>
+              <i class="icon tim-icons icon-wifi"> </i>
+              <i class="icon icon-sm tim-icons icon-key-25"> </i>
+              <i class="icon icon-sm tim-icons icon-atom"> </i>
+              <i class="icon icon-sm tim-icons icon-satisfied"> </i>
+              <i class="icon tim-icons icon-gift-2"> </i>
+              <i class="icon tim-icons icon-tap-02"> </i>
+              <i class="icon tim-icons icon-wallet-43"> </i>
+            </div>
+            <span class="blur-hidden h5 text-danger">
+              Eplore all the 21.000+ Nucleo Icons
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="section section-signup"> -->
+      <div class="container">
+        <div class="squares square-1"></div>
+        <div class="squares square-2"></div>
+        <div class="squares square-3"></div>
+        <div class="squares square-4"></div>
+        <div class="row row-grid justify-content-between align-items-center">
+          <div class="col-lg-6">
+            <h3 class="display-3 text-white">
+              Keep In Touch 
+              <span class="text-white"> 'Full Fill Your Dreams with Us' </span>
+            </h3>
+            <p class="text-white mb-3">
+              The Design System comes with four pre-built pages to help you get
+              started faster. You can change the text and images and you're good
+              to go. More importantly, looking at them will give you a picture
+              of what you can built with this powerful Bootstrap 4 Design
+              System.
+            </p>
+            <div class="btn-wrapper">
+              <a class="btn btn-danger" [routerLink]="['/register']">
+                Register Page
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-lg-auto">
+            <div class="card card-register">
+              <div class="card-header">
+                <img
+                  alt="Card image"
+                  class="card-img"
+                  src="assets/img/square1-red.png"
+                />
+
+                <h4 class="card-title">Register</h4>
+              </div>
+              <div class="card-body">
+                <form class="form">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="tim-icons icon-single-02"> </i>
+                      </div>
+                    </div>
+                    <input
+                      class="form-control"
+                      placeholder="Full Name"
+                      type="text"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="tim-icons icon-email-85"> </i>
+                      </div>
+                    </div>
+                    <input
+                      class="form-control"
+                      placeholder="Email"
+                      type="text"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text">
+                        <i class="tim-icons icon-lock-circle"> </i>
+                      </div>
+                    </div>
+                    <input
+                      class="form-control"
+                      placeholder="Password"
+                      type="text"
+                    />
+                  </div>
+                  <div class="form-check text-left">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" />
+
+                      <span class="form-check-sign"> </span> I agree to the
+                      <a href="javascript:void(0)"> terms and conditions </a> .
+                    </label>
+                  </div>
+                </form>
+              </div>
+              <div class="card-footer">
+                <a
+                  class="btn btn-danger btn-round btn-lg"
+                  href="javascript:void(0)"
+                >
+                  Get Started
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+    <!-- </div> -->
+    <!-- <div class="section section-examples" data-background-color="black"> -->
+      <img class="path" src="assets/img/path1.png" />
+
+      <!-- <div class="space-50"></div> -->
+      <div class="container text-center">
+        <div class="row">
+          <!-- <div class="col-sm-6">
+            <a [routerLink]="['/landing']">
+              <img
+                alt="Image"
+                class="img-raised"
+                src="assets/img/landing-page.png"
+              />
+            </a>
+            <a
+              class="btn btn-simple btn-danger btn-round"
+              [routerLink]="['/landing']"
+            >
+              View Landing Page
+            </a>
+          </div> -->
+          <!-- <div class="col-sm-6">
+            <a [routerLink]="['/profile']">
+              <img
+                alt="Image"
+                class="img-raised"
+                src="assets/img/profile-page.png"
+              />
+            </a>
+            <a
+              class="btn btn-simple btn-danger btn-round"
+              [routerLink]="['/profile']"
+            >
+              View Profile Page
+            </a>
+          </div> -->
+        </div>
+      </div>
+    <!-- </div> -->
+    <div class="section section-download" data-background-color="black" #target>
+      <img class="path" src="assets/img/path1.png" />
+
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="text-center col-md-12 col-lg-8">
+            <h2 class="title">
+              5 Best countries to study MS abroad
+              Why students pursue MS abroad?
+            </h2>
+            <h4 class="description">
+              MS is one of the most sought-after courses today because of the weight it carries on your resume. Those who want to go to study abroad always have a question in their mind that which country is best for MS. So, it is essential to keep in mind that the kind of school and MS program you attend also have brand associations that can help open doors based on the school's reputation. Hence, it is important to choose the place to study wisely before applying. The criteria for choosing an MS College should be based keeping in mind the cost, reputation, quality of education, positive reviews and rate of investment (ROI), etc.
+            </h4>
+          </div>
+          <div class="text-center col-md-12 col-lg-8">
+            <a
+              class="btn btn-danger btn-round btn-lg"
+              href="https://www.creative-tim.com/product/blk-design-system-angular"
+              role="button"
+            >
+              Download Angular
+            </a>
+          </div>
+        </div>
+        <br />
+
+        <br />
+
+        <br />
+
+        <br />
+
+        <br />
+
+        <div class="row row-grid align-items-center my-md">
+          <div class="col-lg-6">
+            <h3 class="text-danger font-weight-light mb-2">
+              Our partners
+            </h3>
+            <h4 class="mb-0 font-weight-light">
+              Let's get in touch on it.
+            </h4>
+          </div>
+          <div class="col-lg-6 text-lg-center btn-wrapper">
+            <!-- <img [src]="imgPath1" alt="ielts"> -->
+            <!-- <img [src]="imgPath2" alt="hotcourse"> -->
+            <div id="images">
+              
+              <div class="row">
+                <div class="col-sm-6 col-6">
+                <img
+                alt="Rounded image"
+                class="img-fluid rounded shadow"
+                [src]="imgPath1"
+                style="width: 250px;"
+              />
+              </div>
+                <!-- <div class="col-sm-3 col-6">
+                
+                  <img
+                  alt="Circle image"
+                  class="img-fluid rounded-circle shadow"
+                  [src]="imgPath1"
+                  style="width: 250px;"
+                />
+                </div> -->
+                <div class="col-sm3 col-6">
+                 
+                  <img
+                    alt="Circle image"
+                    class="img-fluid rounded-circle shadow"
+                    [src]="imgPath2"
+                    style="width: 250px;"
+                  />
+                </div>
+               
+                
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      aria-labelledby="myModalLabel"
+      bsModal
+      class="modal fade"
+      #myModal="bs-modal"
+      id="myModal"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <button
+              aria-hidden="true"
+              class="close"
+              data-dismiss="modal"
+              type="button"
+              (click)="myModal.hide()"
+            >
+              <i class="tim-icons icon-simple-remove"> </i>
+            </button>
+            <h4 class="title title-up">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts. Separated
+              they live in Bookmarksgrove right at the coast of the Semantics, a
+              large language ocean. A small river named Duden flows by their
+              place and supplies it with the necessary regelialia. It is a
+              paradisematic country, in which roasted parts of sentences fly
+              into your mouth.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-default" type="button">Nice Button</button>
+            <button
+              class="btn btn-danger"
+              data-dismiss="modal"
+              type="button"
+              (click)="myModal.hide()"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      aria-labelledby="myModalLabel"
+      bsModal
+      class="modal fade modal-mini modal-danger modal-mini"
+      #myModal1="bs-modal"
+      id="myModal1"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <button
+              aria-hidden="true"
+              class="close"
+              data-dismiss="modal"
+              (click)="myModal1.hide()"
+              type="button"
+            >
+              <i class="tim-icons icon-simple-remove text-white"> </i>
+            </button>
+            <div class="modal-profile">
+              <i class="tim-icons icon-single-02"> </i>
+            </div>
+          </div>
+          <div class="modal-body">
+            <p>Always have an access to your profile</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-link btn-neutral" type="button">Back</button>
+            <button
+              class="btn btn-link btn-neutral"
+              data-dismiss="modal"
+              type="button"
+              (click)="myModal1.hide()"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      aria-labelledby="myModalLabel"
+      bsModal
+      class="modal fade modal-black"
+      #myModal2="bs-modal"
+      id="myModal2"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <button
+              aria-hidden="true"
+              class="close"
+              data-dismiss="modal"
+              (click)="myModal2.hide()"
+              type="button"
+            >
+              <i class="tim-icons icon-simple-remove text-white"> </i>
+            </button>
+            <div class="text-muted text-center ml-auto mr-auto">
+              <h3 class="mb-0">Sign in with</h3>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="btn-wrapper text-center">
+              <a
+                class="btn btn-neutral btn-icon mr-1"
+                href="javascript:void(0)"
+              >
+                <img src="assets/img/github.svg" />
+              </a>
+              <a class="btn btn-neutral btn-icon" href="javascript:void(0)">
+                <img src="assets/img/google.svg" />
+              </a>
+            </div>
+            <div class="text-center text-muted mb-4 mt-3">
+              <small> Or sign in with credentials </small>
+            </div>
+            <form role="form">
+              <div class="form-group mb-3">
+                <div
+                  class="input-group input-group-alternative"
+                  [ngClass]="{ 'input-group-focus': focus1 === true }"
+                >
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="tim-icons icon-email-85"> </i>
+                    </span>
+                  </div>
+                  <input
+                    class="form-control"
+                    placeholder="Email"
+                    type="email"
+                    (focus)="focus1 = true"
+                    (blur)="focus1 = false"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div
+                  class="input-group input-group-alternative"
+                  [ngClass]="{ 'input-group-focus': focus2 === true }"
+                >
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="tim-icons icon-key-25"> </i>
+                    </span>
+                  </div>
+                  <input
+                    class="form-control"
+                    placeholder="Password"
+                    type="password"
+                    (focus)="focus2 = true"
+                    (blur)="focus2 = false"
+                  />
+                </div>
+              </div>
+              <div class="form-check mt-3">
+                <label class="form-check-label">
+                  <input
+                    checked="checked"
+                    class="form-check-input"
+                    type="checkbox"
+                  />
+
+                  <span class="form-check-sign"> </span> Remember me!
+                </label>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-primary my-4" type="button">
+                  Sign in
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"><h1 class="title">BLK•</h1></div>
+        <div class="col-md-3">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/home']"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/landing']"> Landing </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/register']"> Register </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/profile']"> Profile </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="https://creative-tim.com/contact-us?ref=blkdsa-footer">
+                Contact Us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://creative-tim.com/about-us?ref=blkdsa-footer">
+                About Us
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://creative-tim.com/blog?ref=blkdsa-footer">
+                Blog
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://opensource.org/licenses/MIT">
+                License
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h3 class="title">Follow us:</h3>
+          <div class="btn-wrapper profile">
+            <a
+              class="btn btn-icon btn-neutral btn-round btn-simple mr-1"
+              href="https://twitter.com/creativetim"
+              target="_blank"
+            >
+              <i class="fab fa-twitter"> </i>
+            </a>
+            <a
+              class="btn btn-icon btn-neutral btn-round btn-simple mr-1"
+              href="https://www.facebook.com/creativetim"
+              target="_blank"
+            >
+              <i class="fab fa-facebook-square"> </i>
+            </a>
+            <a
+              class="btn btn-icon btn-neutral btn-round btn-simple"
+              href="https://dribbble.com/creativetim"
+              target="_blank"
+            >
+              <i class="fab fa-dribbble"> </i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <footer class="bg-dark text-center text-white">
+    <!-- Copyright -->
+    <div class="text-center p-3" style=" background: radial-gradient(ellipse at bottom, #292d61 30%, #171941 80%);">
+      © 2021 Copyright:
+      <a class="text-white" href="">Consulatancy.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+</div>
