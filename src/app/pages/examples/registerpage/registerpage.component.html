@@ -11,7 +11,7 @@
         placement="bottom"
         tooltip="Designed and Coded by Creative Tim"
       >
-        <span> BLK• </span> Design System Angular
+        <span> Consulatancy• </span> Services
       </a>
       <button
         aria-controls="navigation-index"
@@ -34,7 +34,7 @@
     >
       <div class="navbar-collapse-header">
         <div class="row">
-          <div class="col-6 collapse-brand"><a> BLK• </a></div>
+          <div class="col-6 collapse-brand"><a> Consulatancy• </a></div>
           <div class="col-6 collapse-close text-right">
             <button
               aria-controls="navigation-index"
@@ -122,10 +122,10 @@
                 <h4 class="card-title">Register</h4>
               </div>
               <div class="card-body">
-                <form class="form">
+                <form class="form" #formDATA="ngForm">
                   <div
                     class="input-group"
-                    [ngClass]="{ 'input-group-focus': focus === true }"
+                 
                   >
                     <div class="input-group-prepend">
                       <div class="input-group-text">
@@ -136,13 +136,30 @@
                       class="form-control"
                       placeholder="Full Name"
                       type="text"
-                      (focus)="focus = true"
-                      (blur)="focus = false"
+                      name="name"
+                      [(ngModel)]="addFormObj.name"
                     />
                   </div>
                   <div
+                  class="input-group"
+                 
+                >
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">
+                      <i class="tim-icons icon-mobile"> </i>
+                    </div>
+                  </div>
+                  <input
+                    class="form-control"
+                    placeholder="Phone Number"
+                    type="text"
+                    name="phoneNumber"
+                    [(ngModel)]="addFormObj.phoneNumber"
+                  />
+                </div>
+                  <div
                     class="input-group"
-                    [ngClass]="{ 'input-group-focus': focus1 === true }"
+                 
                   >
                     <div class="input-group-prepend">
                       <div class="input-group-text">
@@ -153,25 +170,27 @@
                       class="form-control"
                       placeholder="Email"
                       type="text"
-                      (focus)="focus1 = true"
-                      (blur)="focus1 = false"
+                     
+                      name="emailid"
+                      [(ngModel)]="addFormObj.emailid"
                     />
                   </div>
                   <div
                     class="input-group"
-                    [ngClass]="{ 'input-group-focus': focus2 === true }"
+               
                   >
                     <div class="input-group-prepend">
                       <div class="input-group-text">
-                        <i class="tim-icons icon-lock-circle"> </i>
+                        <i class="tim-icons icon-paper"> </i>
                       </div>
                     </div>
                     <input
                       class="form-control"
-                      placeholder="Password"
+                      placeholder="Message"
                       type="text"
-                      (focus)="focus2 = true"
-                      (blur)="focus2 = false"
+                       
+                      name="message"
+                      [(ngModel)]="addFormObj.message"
                     />
                   </div>
                   <div class="form-check text-left">
@@ -179,7 +198,7 @@
                       <input class="form-check-input" type="checkbox" />
 
                       <span class="form-check-sign"> </span> I agree to the
-                      <a href="javascript:void(0)"> terms and conditions </a> .
+                      <a > terms and conditions </a> .
                     </label>
                   </div>
                 </form>
@@ -187,14 +206,15 @@
               <div class="card-footer">
                 <a
                   class="btn btn-danger btn-round btn-lg"
-                  href="javascript:void(0)"
+                  (click)="saveFormObj(formDATA)"
                 >
-                  Get Started
+                  Submit
                 </a>
               </div>
             </div>
           </div>
         </div>
+        {{formDATA.value | json}}
         <div class="register-bg"></div>
         <div class="square square-1" id="square1"></div>
         <div class="square square-2" id="square2"></div>
@@ -208,7 +228,7 @@
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-3"><h1 class="title">BLK•</h1></div>
+        <div class="col-md-3"><h1 class="title">Consulatancy•</h1></div>
         <div class="col-md-3">
           <ul class="nav">
             <li class="nav-item">

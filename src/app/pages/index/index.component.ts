@@ -1,11 +1,13 @@
 import { Component, OnInit, OnDestroy } from "@angular/core";
 import noUiSlider from "nouislider";
-
+import { ServiceService } from '../../service.service';
 @Component({
   selector: "app-index",
   templateUrl: "index.component.html"
 })
 export class IndexComponent implements OnInit, OnDestroy {
+  addFormResp:any;
+  addFormObj:any={};
   isCollapsed = true;
   focus;
   focus1;
@@ -13,7 +15,7 @@ export class IndexComponent implements OnInit, OnDestroy {
   date = new Date();
   pagination = 3;
   pagination1 = 1;
-  constructor() {}
+  constructor(private _service: ServiceService) {}
   scrollToDownload(element: any) {
     element.scrollIntoView({ behavior: "smooth" });
   }
@@ -66,4 +68,23 @@ export class IndexComponent implements OnInit, OnDestroy {
     var body = document.getElementsByTagName("body")[0];
     body.classList.remove("index-page");
   }
+  // saveChannel(obj){
+  //   console.log('save--?',obj)
+ 
+  //   let request=
+  //   {
+  //     "name": this.addFormObj.name,
+  //     "phoneNumber": this.addFormObj.phoneNumber,
+  //     "emailid": this.addFormObj.emailid,
+  //     "message": this.addFormObj.message,
+    
+  //   }
+  //     console.log("request is::::",request);
+  //      this._service.addRegForm(request).subscribe((res)=>{
+  //       this.addFormResp=res;
+  //       console.log("form data",res);
+  //       this.addFormObj={};
+  //     })
+   
+  // }
 }

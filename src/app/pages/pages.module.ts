@@ -21,6 +21,7 @@ import { IndexComponent } from "./index/index.component";
 import { ProfilepageComponent } from "./examples/profilepage/profilepage.component";
 import { RegisterpageComponent } from "./examples/registerpage/registerpage.component";
 import { LandingpageComponent } from "./examples/landingpage/landingpage.component";
+import { ServiceService } from "../service.service";
 
 @NgModule({
   imports: [
@@ -53,6 +54,6 @@ import { LandingpageComponent } from "./examples/landingpage/landingpage.compone
     RegisterpageComponent,
     LandingpageComponent
   ],
-  providers: []
+  providers: [ServiceService]
 })
 export class PagesModule {}

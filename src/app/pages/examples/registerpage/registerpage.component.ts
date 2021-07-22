@@ -1,15 +1,17 @@
 import { Component, OnInit, OnDestroy, HostListener } from "@angular/core";
-
+import { ServiceService } from '../../../service.service'; 
 @Component({
   selector: "app-registerpage",
   templateUrl: "registerpage.component.html"
 })
 export class RegisterpageComponent implements OnInit, OnDestroy {
+  public addFormObj:any;
+  public addFormResp:any;
   isCollapsed = true;
   focus;
   focus1;
   focus2;
-  constructor() {}
+  constructor(private _service: ServiceService) {}
   @HostListener("document:mousemove", ["$event"])
   onMouseMove(e) {
     var squares1 = document.getElementById("square1");
@@ -75,13 +77,32 @@ export class RegisterpageComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    var body = document.getElementsByTagName("body")[0];
-    body.classList.add("register-page");
+    // var body = document.getElementsByTagName("body")[0];
+    // body.classList.add("register-page");
 
-    this.onMouseMove(event);
+    // this.onMouseMove(event);
   }
   ngOnDestroy() {
-    var body = document.getElementsByTagName("body")[0];
-    body.classList.remove("register-page");
+    // var body = document.getElementsByTagName("body")[0];
+    // body.classList.remove("register-page");
   }
+  saveFormObj(obj){
+    console.log('save--?',obj)
+ 
+    let request=
+    {
+      "name": this.addFormObj.name,
+      "phoneNumber": this.addFormObj.phoneNumber,
+      "emailid": this.addFormObj.emailid,
+      "message": this.addFormObj.message
+    }
+      console.log("request is::::",request);
+       this._service.addRegForm(request).subscribe((res)=>{
+        this.addFormResp=res;
+        console.log("form data",res);
+        this.addFormObj={};
+      })
+   
+  }
+ 
 }
