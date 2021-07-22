@@ -6,14 +6,16 @@
 		"start": "node server.js"
 	},
 	"dependencies": {
-		"body-parser": "x.x.x",
-		"cfenv": "1.0.x",
-		"express": "^4.16.3",
+		"body-parser": "^1.19.0",
+		"cfenv": "^1.0.4",
+		"dotenv": "^10.0.0",
+		"express": "^4.17.1",
+		"install": "^0.13.0",
+		"mongodb": "^4.0.1",
 		"nodemailer": "x.x.x",
-		"request": "x.x.x",
 		"path": "x.x.x",
-		"mongodb":"x.x.x",
-		"dotenv":"x.x.x"
+		"pm2": "^5.1.0",
+		"request": "x.x.x"
 	},
 	"repository": {},
 	"engines": {
