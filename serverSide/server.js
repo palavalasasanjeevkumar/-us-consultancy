@@ -36,6 +36,7 @@ app.use(function (req, res, next) {
 // our Angular code is sending JSON data, but your Express app is parsing it as
 // URL encoded data.
 app.use(bodyParser.json());
+console.log(process.env.CTRLS_MONGO_DB_URL)
 const MONGO_HOST_URL = process.env.CTRLS_MONGO_DB_URL
 const MONGO_DB_NAME = process.env.CTRL_MONGO_DB
 const MONGO_DB_COLLECTION_NAME = process.env.CTRL_MONGO_COLLECTION
