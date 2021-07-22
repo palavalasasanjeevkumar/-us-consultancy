@@ -26,8 +26,6 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-// get the app environment from Cloud Foundry
-var appEnv = cfenv.getAppEnv();
 
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
