@@ -11,7 +11,9 @@
 		"express": "^4.16.3",
 		"nodemailer": "x.x.x",
 		"request": "x.x.x",
-		"path": "x.x.x"
+		"path": "x.x.x",
+		"mongodb":"x.x.x",
+		"dotenv":"x.x.x"
 	},
 	"repository": {},
 	"engines": {
