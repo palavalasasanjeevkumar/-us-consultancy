@@ -7,6 +7,10 @@ import { ServiceService } from '../../../service.service';
 export class RegisterpageComponent implements OnInit, OnDestroy {
   public addFormObj:any;
   public addFormResp:any;
+  public name:any;
+  public phoneNumber:any;
+  public emailid:any;
+  public message:any;
   isCollapsed = true;
   focus;
   focus1;
@@ -91,16 +95,16 @@ export class RegisterpageComponent implements OnInit, OnDestroy {
  
     let request=
     {
-      "name": this.addFormObj.name,
-      "phoneNumber": this.addFormObj.phoneNumber,
-      "emailid": this.addFormObj.emailid,
-      "message": this.addFormObj.message
+      "name": this.name,
+      "phoneNumber": this.phoneNumber,
+      "emailid": this.emailid,
+      "message": this.message
     }
       console.log("request is::::",request);
        this._service.addRegForm(request).subscribe((res)=>{
         this.addFormResp=res;
         console.log("form data",res);
-        this.addFormObj={};
+          //request={};
       })
    
   }
