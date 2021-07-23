@@ -52,24 +52,12 @@ app.post('/insertData', (req, res) => {
 });
 
 app.get('/getData', (req, res) => {
-  let returnData = []
-  MongoClient.connect(MONGO_HOST_URL, function (err, db) {
+  MongoClient.connect(MONGO_HOST_URL, { useNewUrlParser: true }, function (err, db) {
     if (err) throw err;
     var dbo = db.db(MONGO_DB_NAME);
-    var cursor = dbo.collection(MONGO_DB_COLLECTION_NAME).find();
-    // Execute the each command, triggers for each document
-    cursor.each(function (err, item) {
-      // If the item is null then the cursor is exhausted/empty and closed
-      if (item == null) {
-        console.log("NO RECORDS FOUND");
-        db.close(); // you may not want to close the DB if you have more code....
-        res.status(200).send(returnData)
-        return;
-      }
-      else {
-        returnData.push(item)
-      }
-      // otherwise, do something with the item
+    dbo.collection(MONGO_DB_COLLECTION_NAME).find().toArray().then((result, err) => {
+      if (err) throw err
+      res.status(200).send(result)
     });
   });
 });
