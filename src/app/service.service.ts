@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ServiceService {
-   public Url = 'http://localhost:6001/insertData';
+   public Url = 'http://localhost:6001/';
   constructor(private _http: HttpClient) { }
   
   addRegForm(obj) {
