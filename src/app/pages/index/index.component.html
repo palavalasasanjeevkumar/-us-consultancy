@@ -1169,7 +1169,7 @@
                 <h4 class="card-title">Register</h4>
               </div>
               <div class="card-body">
-                <form class="form">
+                <form class="form" #form="ngForm">
                   <div class="input-group">
                     <div class="input-group-prepend">
                       <div class="input-group-text">
@@ -1180,6 +1180,8 @@
                       class="form-control"
                       placeholder="Full Name"
                       type="text"
+                      name="name"
+                      [(ngModel)]="name"
                     />
                   </div>
                   <div class="input-group">
@@ -1192,6 +1194,8 @@
                       class="form-control"
                       placeholder="Phone Number"
                       type="text"
+                      name="phoneNumber"
+                      [(ngModel)]="phoneNumber"
                     />
                   </div>
                   <div class="input-group">
@@ -1203,7 +1207,9 @@
                     <input
                       class="form-control"
                       placeholder="Email"
-                      type="text"
+                      type="email"
+                      name="emailid"
+                      [(ngModel)]="emailid"
                     />
                   </div>
                   <div class="input-group">
@@ -1214,6 +1220,8 @@
                     </div>
                     <textarea
                       class="form-control"
+                      [(ngModel)]="message"
+                      name="message"
                       placeholder="Message"
                       rows="4" cols="40" maxlength="100"
                     ></textarea>
@@ -1228,13 +1236,15 @@
                   </div> -->
                 </form>
               </div>
+
+           
               <div class="card-footer">
-                <a
-                  class="btn btn-danger btn-round btn-lg"
-                  href="javascript:void(0)"
+                <button
+                   class="btn btn-danger btn-round btn-lg"
+                   (click)="InsertFormObj(form)"
                 >
                   Get Started
-                </a>
+              </button>
               </div>
             </div>
           </div>

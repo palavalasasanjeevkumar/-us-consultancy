@@ -22,6 +22,7 @@ import { ProfilepageComponent } from "./examples/profilepage/profilepage.compone
 import { RegisterpageComponent } from "./examples/registerpage/registerpage.component";
 import { LandingpageComponent } from "./examples/landingpage/landingpage.component";
 import { ServiceService } from "../service.service";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   imports: [
@@ -29,6 +30,7 @@ import { ServiceService } from "../service.service";
     BrowserModule,
     FormsModule,
     RouterModule,
+    HttpClientModule,
     BsDropdownModule.forRoot(),
     ProgressbarModule.forRoot(),
     TooltipModule.forRoot(),

@@ -6,6 +6,11 @@ import { ServiceService } from '../../service.service';
   templateUrl: "index.component.html"
 })
 export class IndexComponent implements OnInit, OnDestroy {
+ 
+  public name:any;
+  public phoneNumber:any;
+  public emailid:any;
+  public message:any;
   addFormResp:any;
   addFormObj:any={};
   isCollapsed = true;
@@ -68,23 +73,22 @@ export class IndexComponent implements OnInit, OnDestroy {
     var body = document.getElementsByTagName("body")[0];
     body.classList.remove("index-page");
   }
-  // saveChannel(obj){
-  //   console.log('save--?',obj)
+  InsertFormObj(obj){
+    console.log('insert data--',obj)
  
-  //   let request=
-  //   {
-  //     "name": this.addFormObj.name,
-  //     "phoneNumber": this.addFormObj.phoneNumber,
-  //     "emailid": this.addFormObj.emailid,
-  //     "message": this.addFormObj.message,
-    
-  //   }
-  //     console.log("request is::::",request);
-  //      this._service.addRegForm(request).subscribe((res)=>{
-  //       this.addFormResp=res;
-  //       console.log("form data",res);
-  //       this.addFormObj={};
-  //     })
+    let request=
+    {
+      "name": this.name,
+      "phoneNumber": this.phoneNumber,
+      "emailid": this.emailid,
+      "message": this.message
+    }
+      console.log("request is::::",request);
+       this._service.addRegForm(request).subscribe((res)=>{
+        this.addFormResp=res;
+        console.log("form data",res);
+          
+      })
    
-  // }
+  }
 }
