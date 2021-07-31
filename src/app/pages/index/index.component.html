@@ -52,17 +52,17 @@
         </div>
       </div>
       <ul class="navbar-nav">
-        <li class="dropdown nav-item" dropdown>
+        <li class="dropdown nav-item" dropdown id="home">
           <a
             class="dropdown-toggle nav-link dropdown-toggle"
             data-toggle="dropdown"
             dropdownToggle
-            href="javascript:void(0)"
+            
           >
             <!-- <i class="fa fa-cogs d-lg-none d-xl-none"> </i> -->
             <i class="fas fa-home d-lg-none d-xl-none"></i> Home
           </a>
-          <div class="dropdown-menu dropdown-with-icons" *dropdownMenu>
+          <!-- <div class="dropdown-menu dropdown-with-icons" *dropdownMenu>
             <a
               class="dropdown-item"
               href=""
@@ -78,19 +78,19 @@
             <a class="dropdown-item" [routerLink]="['/profile']">
               <i class="tim-icons icon-single-02"> </i> Profile Page
             </a>
-          </div>
+          </div> -->
           </li>
-          <li class="dropdown nav-item" dropdown>
+          <li class="dropdown nav-item" dropdown id="study">
             <a
               class="dropdown-toggle nav-link dropdown-toggle"
               data-toggle="dropdown"
               dropdownToggle
-              href="javascript:void(0)"
+             
             >
               <!-- <i class="fa fa-cogs d-lg-none d-xl-none"> </i> -->
               <i class="fas fa-graduation-cap d-lg-none d-xl-none"></i>Study 
             </a>
-          <div class="dropdown-menu dropdown-with-icons" *dropdownMenu>
+          <!-- <div class="dropdown-menu dropdown-with-icons" *dropdownMenu>
             <a
               class="dropdown-item"
               href=""
@@ -106,19 +106,19 @@
             <a class="dropdown-item" [routerLink]="['/profile']">
               <i class="tim-icons icon-single-02"> </i> Profile Page
             </a>
-          </div>
+          </div> -->
     </li>
-    <li class="dropdown nav-item" dropdown>
+    <li class="dropdown nav-item" dropdown id="aboutUs">
       <a
         class="dropdown-toggle nav-link dropdown-toggle"
         data-toggle="dropdown"
         dropdownToggle
-        href="javascript:void(0)"
+        
       >
         <!-- <i class="fa fa-cogs d-lg-none d-xl-none"> </i>  -->
         <i class="fa fa-address-card d-lg-none d-xl-none"></i>About US
       </a>
-          <div class="dropdown-menu dropdown-with-icons" *dropdownMenu>
+          <!-- <div class="dropdown-menu dropdown-with-icons" *dropdownMenu>
             <a
               class="dropdown-item"
               href=""
@@ -134,19 +134,19 @@
             <a class="dropdown-item" [routerLink]="['/profile']">
               <i class="tim-icons icon-single-02"> </i> Profile Page
             </a>
-          </div>
+          </div> -->
 </li>
-<li class="dropdown nav-item" dropdown>
+<li class="dropdown nav-item" dropdown id="contactUs">
   <a
     class="dropdown-toggle nav-link dropdown-toggle"
     data-toggle="dropdown"
     dropdownToggle
-    href="javascript:void(0)"
+    
   >
     <!-- <i class="fa fa-cogs d-lg-none d-xl-none"> </i>  -->
     <i class="fas fa-mobile-alt d-lg-none d-xl-none"></i>Contact Us
   </a>
-          <div class="dropdown-menu dropdown-with-icons" *dropdownMenu>
+          <!-- <div class="dropdown-menu dropdown-with-icons" *dropdownMenu>
             <a
               class="dropdown-item"
               href=""
@@ -162,7 +162,7 @@
             <a class="dropdown-item" [routerLink]="['/profile']">
               <i class="tim-icons icon-single-02"> </i> Profile Page
             </a>
-          </div>
+          </div> -->
         </li>
 
         <li class="nav-item">
@@ -298,7 +298,7 @@
                 </carousel> -->
               </div>
               <div class="col-lg-5 mb-5 mb-lg-0">
-                <h1 class="text-white font-weight-light">Bootstrap carousel</h1>
+                <h1 class="text-white font-weight-light">About STUDY ON US</h1>
                 <p class="text-white mt-4">
                   Black Design comes with three pre-built pages to help you get
                   started faster. You can change the text and images and you're
@@ -315,9 +315,25 @@
             </div>
           </div>
           <div class="container">
-            <div class="title"><h3>STUDY IN CANADA</h3></div>
+           
             <div class="row justify-content-between align-items-center">
+              
+              <div class="col-lg-5 mb-5 mb-lg-0">
+                <h1 class="text-white font-weight-light">About STUDT ON CANADA</h1>
+                <p class="text-white mt-4">
+                  Black Design comes with three pre-built pages to help you get
+                  started faster. You can change the text and images and you're
+                  good to go.
+                </p>
+                <a
+                  class="btn btn-warning mt-4"
+                  href="https://demos.creative-tim.com/blk-design-system-angular/#/documentation/alerts"
+                >
+                  See More Information
+                </a>
+              </div>
               <div class="col-lg-6">
+                <div class="title"><h3>STUDY IN CANADA</h3></div>
                 <div class="demo">
                   <figure class="imghvr-push-left"><img src="https://picsum.photos/600/400" alt="04">
                     <figcaption>
@@ -350,21 +366,6 @@
                   </slide>
                 </carousel> -->
               </div>
-              <div class="col-lg-5 mb-5 mb-lg-0">
-                <h1 class="text-white font-weight-light">Bootstrap carousel</h1>
-                <p class="text-white mt-4">
-                  Black Design comes with three pre-built pages to help you get
-                  started faster. You can change the text and images and you're
-                  good to go.
-                </p>
-                <a
-                  class="btn btn-warning mt-4"
-                  href="https://demos.creative-tim.com/blk-design-system-angular/#/documentation/alerts"
-                >
-                  See More Information
-                </a>
-              </div>
-             
             </div>
           </div>
           <div class="container">
@@ -404,7 +405,7 @@
                 </carousel> -->
               </div>
               <div class="col-lg-5 mb-5 mb-lg-0" >
-                <h1 class="text-white font-weight-light">Bootstrap carousel</h1>
+                <h1 class="text-white font-weight-light">About STUDT ON LONDON</h1>
                 <p class="text-white mt-4">
                   Black Design comes with three pre-built pages to help you get
                   started faster. You can change the text and images and you're
@@ -421,43 +422,10 @@
             </div>
           </div>
            <div class="container">
-            <div class="title"><h3>STUDY IN UK</h3></div>
+           
             <div class="row justify-content-between align-items-center">
-              <div class="col-lg-6">
-                <!-- <carousel [showIndicators]="false" >
-                  <slide>
-                    <img
-                      alt="First slide"
-                      class="d-block w-50"
-                      src="assets/img/denys.jpg"
-                    />
-                  </slide>
-                  <slide>
-                    <img
-                      alt="Second slide"
-                      class="d-block w-50"
-                      src="assets/img/fabien-bazanegue.jpg"
-                    />
-                  </slide>
-                  <slide>
-                    <img
-                      alt="Third slide"
-                      class="d-block w-50"
-                      src="assets/img/mark-finn.jpg"
-                    />
-                  </slide>
-                </carousel> -->
-                <div class="demo">
-                  <figure class="imghvr-push-left"><img src="https://picsum.photos/600/400" alt="04">
-                    <figcaption>
-                      <h3>Oscar Wilde</h3>
-                      <p>&quot;You can never be overdressed or overeducated.&quot;</p>
-                    </figcaption><a href="javascript:;"></a>
-                  </figure>
-                </div>
-              </div>
               <div class="col-lg-5 mb-5 mb-lg-0">
-                <h1 class="text-white font-weight-light">Bootstrap carousel</h1>
+                <h1 class="text-white font-weight-light">About STUDT ON UK</h1>
                 <p class="text-white mt-4">
                   Black Design comes with three pre-built pages to help you get
                   started faster. You can change the text and images and you're
@@ -470,6 +438,19 @@
                   See More Information
                 </a>
               </div>
+              
+              <div class="col-lg-6">
+                <div class="title"><h3>STUDY IN UK</h3></div>
+                               <div class="demo">
+                  <figure class="imghvr-push-left"><img src="https://picsum.photos/600/400" alt="04">
+                    <figcaption>
+                      <h3>Oscar Wilde</h3>
+                      <p>&quot;You can never be overdressed or overeducated.&quot;</p>
+                    </figcaption><a href="javascript:;"></a>
+                  </figure>
+                </div>
+              </div>
+             
              
             </div>
           </div>
@@ -481,14 +462,14 @@
         <!-- <div class="card">  -->
           <!-- <div class="card-header">  -->
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 hover-fade">
             <h3  style="font-family: play;text-align: center;color: lightcoral;">Computer Sciences And IT</h3>
            <div class="card">
            <h3 style="text-align: center">Computer Science <br>Information Technology<br>Software Engineering</h3>
           </div>
-           
+           </div>
             <br />
-
+            <div class="col-md-4 hover-fade">
             <h3  style="font-family: play;text-align: center;color: lightcoral;">Business and Management</h3>
             <div class="card">
               <h3 style="text-align: center">Master of Business Administration<br>Sales and Marketing<br>
@@ -496,25 +477,27 @@
               </h3>
          </div>
             </div>
-          <div class="col-md-4">
+          <div class="col-md-4 hover-fade">
             <h3  style="font-family: play;text-align: center;color: lightcoral;">Engineering</h3>
             <div class="card">
           <h3 style="text-align: center">Mechanical Engineering <br>Civil Engineering<br>Electrical Engineering</h3>
            </div>
+           </div>
             <br />
-
+            <div class="col-md-4 hover-fade">
             <h3  style="font-family: play;text-align: center;color: lightcoral;">Health and Science</h3>
             <div class="card">
             <h3 style="text-align: center">Medicine and Surgery <br>Dental Studies<br>Physiotherapy</h3>
           </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 hover-fade">
             <h3  style="font-family: play;text-align: center;color: lightcoral;">Law and Legal Studies</h3>
             <div class="card">
              <h3 style="text-align: center">Legal Studies <br>International LawBusiness <br> and Commercial</h3>
            </div>
+           </div>
             <br />
-
+            <div class="col-md-4 hover-fade">
             <h3  style="font-family: play;text-align: center;color: lightcoral;">Biological and life Sciences</h3>
             <div class="card">
             <h3 style="text-align: center">Biotechnology<br>Biological Sciences<br>Biomedical Engineering</h3>
@@ -531,8 +514,125 @@
     
     
     <!-- <div class="section section-tabs"> -->
+
       <div class="container">
-        <div class="title"><h3 class="mb-3">Notifications</h3></div>
+        <div class="title"><h3>What our clients are saying</h3></div>
+        
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-3 mb-3 mb-lg-0">
+            <h3 class="text-white font-weight-light" >Our clients are saying</h3>
+          </div>
+          <div class="col-lg-9">
+            <section class="pb-6">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-10 col-xl-8 mx-auto">
+                          <div class="p-5 bg-white shadow rounded">
+                              <!-- Bootstrap carousel-->
+                              <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
+                                  <!-- Bootstrap carousel indicators [nav] -->
+                                  <ol class="carousel-indicators mb-0">
+                                      <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                  </ol>
+            
+            
+                                  <!-- Bootstrap inner [slides]-->
+                                  <div class="carousel-inner px-5 pb-4">
+                                      <!-- Carousel slide-->
+                                      <div class="carousel-item active">
+                                          <div class="media">
+                                            <!-- <img class="rounded-circle img-thumbnail" src="https://res.cloudinary.com/mhmd/image/upload/v1579676165/avatar-1_ffutqr.jpg" alt="" width="75"> -->
+                                              <div class="media-body ml-3">
+                                                  <blockquote class="blockquote border-0 p-0">
+                                                      <article class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</article>
+                                                      <footer class="blockquote-footer">Someone famous in
+                                                          <cite title="Source Title">Source Title</cite>
+                                                      </footer>
+                                                  </blockquote>
+                                              </div>
+                                          </div>
+                                      </div>
+            
+                                      <!-- Carousel slide-->
+                                      <div class="carousel-item">
+                                          <div class="media">
+                                            <!-- <img class="rounded-circle img-thumbnail" src="https://res.cloudinary.com/mhmd/image/upload/v1579676165/avatar-3_hdxocq.jpg" alt="" width="75"> -->
+                                              <div class="media-body ml-3">
+                                                  <blockquote class="blockquote border-0 p-0">
+                                                      <article class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>Lorem icaptionsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</article>
+                                                      <footer class="blockquote-footer">Someone famous in
+                                                          <cite title="Source Title">Source Title</cite>
+                                                      </footer>
+                                                  </blockquote>
+                                              </div>
+                                          </div>
+                                      </div>
+            
+                                      <!-- Carousel slide-->
+                                      <div class="carousel-item">
+                                          <div class="media">
+                                            <!-- <img class="rounded-circle img-thumbnail" src="https://res.cloudinary.com/mhmd/image/upload/v1579676165/avatar-2_gibm2s.jpg" alt="" width="75"> -->
+                                              <div class="media-body ml-3">
+                                                  <blockquote class="blockquote border-0 p-0">
+                                                      <article class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>Lorem icaptionsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</article>
+                                                      <footer class="blockquote-footer">Someone famous in
+                                                          <cite title="Source Title">Source Title</cite>
+                                                      </footer>
+                                                  </blockquote>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+            
+            
+                                  <!-- Bootstrap controls [dots]-->
+                                  <a class="carousel-control-prev width-auto" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                      <i class="fa fa-angle-left text-dark text-lg"></i>
+                                      <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="carousel-control-next width-auto" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                      <i class="fa fa-angle-right text-dark text-lg"></i>
+                                      <span class="sr-only">Next</span>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </section>
+                        
+            <!-- <carousel [showIndicators]="false" >
+              <slide>
+                <img
+                  alt="First slide"
+                  class="d-block w-50"
+                  src="assets/img/denys.jpg"
+                />
+              </slide>
+              <slide>
+                <img
+                  alt="Second slide"
+                  class="d-block w-50"
+                  src="assets/img/fabien-bazanegue.jpg"
+                />
+              </slide>
+              <slide>
+                <img
+                  alt="Third slide"
+                  class="d-block w-50"
+                  src="assets/img/mark-finn.jpg"
+                />
+              </slide>
+            </carousel> -->
+          </div>
+        
+         
+        </div>
+      </div>
+      <!-- <div class="container">
+        <div class="title"><h3 class="mb-3">What our clients are saying</h3></div>
         <div class="row">
           <div class="col-md-10 ml-auto col-xl-6 mr-auto">
             <div class="mb-3">
@@ -640,7 +740,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     <!-- </div> -->
     
     <!-- <div class="section section-notifications" id="notifications">
@@ -922,7 +1022,7 @@
           </div>
         </div> -->
       </div>
-      <div class="section">
+      <!-- <div class="section">
         <div class="container">
           <div class="title"><h3>Carousel</h3></div>
           <div class="row justify-content-between align-items-center">
@@ -967,23 +1067,27 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="section section-nucleo-icons">
       <img class="path" src="assets/img/path3.png" />
 
-      <div class="container">
+      <div class="container" #aboutUs>
         <div class="row justify-content-center">
           <div class="col-lg-8 col-md-12">
             <h2 class="title">About Us</h2>
             <h4 class="description">
-              BLK• Design System PRO comes with 100 custom icons made by our
-              friends from NucleoApp. The official package contains over 2.100
-              thin icons which are looking great in combination with BLK• Design
-              System PRO Make sure you check all of them and use those that you
-              like the most.
+              <!-- <div class="text-center col-md-12 col-lg-8"> -->
+                <h2>
+                  5 Best countries to study MS abroad
+                  Why students pursue MS abroad?
+                </h2>
+                <h4 class="description">
+                  MS is one of the most sought-after courses today because of the weight it carries on your resume. Those who want to go to study abroad always have a question in their mind that which country is best for MS. So, it is essential to keep in mind that the kind of school and MS program you attend also have brand associations that can help open doors based on the school's reputation. Hence, it is important to choose the place to study wisely before applying. The criteria for choosing an MS College should be based keeping in mind the cost, reputation, quality of education, positive reviews and rate of investment (ROI), etc.
+                </h4>
+              <!-- </div> -->
             </h4>
-            <div class="btn-wrapper">
+            <!-- <div class="btn-wrapper">
               <a
                 class="btn btn-danger btn-round mr-1"
                 href="https://demos.creative-tim.com/blk-design-system-angular/#/documentation/icons"
@@ -998,10 +1102,10 @@
               >
                 View All Icons
               </a>
-            </div>
+            </div> -->
           </div>
         </div>
-        <div class="blur-hover">
+        <!-- <div class="blur-hover">
           <a
             href="https://demos.creative-tim.com/blk-design-system-angular/#/documentation/icons"
             class="text-danger"
@@ -1025,7 +1129,7 @@
               Eplore all the 21.000+ Nucleo Icons
             </span>
           </a>
-        </div>
+        </div> -->
       </div>
     </div>
     <!-- <div class="section section-signup"> -->
@@ -1105,23 +1209,23 @@
                   <div class="input-group">
                     <div class="input-group-prepend">
                       <div class="input-group-text">
-                        <i class="tim-icons icon-paper"> </i>
+                        <i class="tim-icons icon-paper" style="margin-top: -33px;"> </i>
                       </div>
                     </div>
-                    <input
+                    <textarea
                       class="form-control"
                       placeholder="Message"
-                      type="text"
-                    />
+                      rows="4" cols="40" maxlength="100"
+                    ></textarea>
                   </div>
-                  <div class="form-check text-left">
+                  <!-- <div class="form-check text-left">
                     <label class="form-check-label">
                       <input class="form-check-input" type="checkbox" />
 
                       <span class="form-check-sign"> </span> I agree to the
                       <a href="javascript:void(0)"> terms and conditions </a> .
                     </label>
-                  </div>
+                  </div> -->
                 </form>
               </div>
               <div class="card-footer">
@@ -1184,7 +1288,7 @@
       <img class="path" src="assets/img/path1.png" />
 
       <div class="container">
-        <div class="row justify-content-md-center">
+        <!-- <div class="row justify-content-md-center">
           <div class="text-center col-md-12 col-lg-8">
             <h2 class="title">
               5 Best countries to study MS abroad
@@ -1203,33 +1307,58 @@
               Download Angular
             </a>
           </div>
-        </div>
-        <br />
-
-        <br />
-
-        <br />
-
-        <br />
-
-        <br />
-
-        <div class="row row-grid align-items-center my-md">
-          <div class="col-lg-6">
-            <h3 class="text-danger font-weight-light mb-2">
-              Our partners
+        </div> -->
+       
+ <div class="row row-grid align-items-center my-md">
+          <div class="row col-lg-6">
+            <h3 class="display-3 text-white">
+              Our partners INDIA
             </h3>
             <h4 class="mb-0 font-weight-light">
-              Let's get in touch on it.
+              <!-- Let's get in touch on it. -->
             </h4>
+            <div class="col-md-12"> 
+              <div class="fall-item fall-effect">
+                        <img src="http://placeimg.com/260/260/nature/8/"/>
+                        <div class="mask">
+                            <h2>About Partners </h2>
+                            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                            <a href="#" class="btn btn-default">Read More</a>
+                        </div>
+                    </div>
+                    </div>
+
+                    <h3 class="display-3 text-white">
+                      Our partners UNITED STATES
+                    </h3>
+                    <h4 class="mb-0 font-weight-light">
+                      <!-- Let's get in touch on it. -->
+                    </h4>
+                    <div class="col-md-12"> 
+                      <div class="fall-item fall-effect">
+                                <img src="http://placeimg.com/260/260/nature/8/"/>
+                                <div class="mask">
+                                    <h2>About Partners </h2>
+                                    <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+                                    <a href="#" class="btn btn-default">Read More</a>
+                                </div>
+                            </div>
+                            </div>
+             
+           
           </div>
+          
+          
           <div class="col-lg-6 text-lg-center btn-wrapper">
             <!-- <img [src]="imgPath1" alt="ielts"> -->
             <!-- <img [src]="imgPath2" alt="hotcourse"> -->
             <div id="images">
-              
+              <h3 class="display-3 text-white">
+                OUR PARTNERS IN INDIA
+               
+              </h3>
               <div class="row">
-                <div class="col-sm-6 col-6">
+                <div class="col-sm-6 col-6 section section-nucleo-icons">
                 <img
                 alt="Rounded image"
                 class="img-fluid rounded shadow"
@@ -1237,16 +1366,8 @@
                 style="width: 250px;"
               />
               </div>
-                <!-- <div class="col-sm-3 col-6">
-                
-                  <img
-                  alt="Circle image"
-                  class="img-fluid rounded-circle shadow"
-                  [src]="imgPath1"
-                  style="width: 250px;"
-                />
-                </div> -->
-                <div class="col-sm3 col-6">
+              
+                <div class="col-sm3 col-6 section section-nucleo-icons">
                  
                   <img
                     alt="Circle image"
@@ -1255,6 +1376,47 @@
                     style="width: 250px;"
                   />
                 </div>
+               
+     
+                <div class="col-sm-6 col-6 section section-nucleo-icons">
+                  <img
+                  alt="Rounded image"
+                  class="img-fluid rounded shadow"
+                  [src]="imgPath1"
+                  style="width: 250px;"
+                />
+                </div>
+                
+                  <div class="col-sm3 col-6 section section-nucleo-icons">
+                   
+                    <img
+                      alt="Circle image"
+                      class="img-fluid rounded-circle shadow"
+                      [src]="imgPath2"
+                      style="width: 250px;"
+                    />
+                  </div>
+                   
+                  
+
+                  <div class="col-sm-6 col-6 section section-nucleo-icons">
+                    <img
+                    alt="Rounded image"
+                    class="img-fluid rounded shadow"
+                    [src]="imgPath1"
+                    style="width: 250px;"
+                  />
+                  </div>
+                  
+                    <div class="col-sm3 col-6 section section-nucleo-icons">
+                     
+                      <img
+                        alt="Circle image"
+                        class="img-fluid rounded-circle shadow"
+                        [src]="imgPath2"
+                        style="width: 250px;"
+                      />
+                    </div>
                
                 
               </div>
@@ -1814,6 +1976,670 @@
                                                           animation-fill-mode:forwards}
                                                           @-webkit-keyframes imghvr-zoom-out-up{50%{-webkit-transform:scale(.8) translateY(0);transform:scale(.8) translateY(0);opacity:.5}100%{-webkit-transform:scale(.8) translateY(-150%);transform:scale(.8) translateY(-150%);opacity:.5}}
                                                           @keyframes imghvr-zoom-out-up{50%{-webkit-transform:scale(.8) translateY(0);transform:scale(.8) translateY(0);opacity:.5}100%{-webkit-transform:scale(.8) translateY(-150%);transform:scale(.8) translateY(-150%);opacity:.5}}.imghvr-zoom-out-down.hover img,.imghvr-zoom-out-down:hover img{-webkit-animation:imghvr-zoom-out-down .4s linear;animation:imghvr-zoom-out-down .4s linear;-webkit-animation-iteration-count:1;animation-iteration-count:1;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}@-webkit-keyframes imghvr-zoom-out-down{50%{-webkit-transform:scale(.8) translateY(0);transform:scale(.8) translateY(0);opacity:.5}100%{-webkit-transform:scale(.8) translateY(150%);transform:scale(.8) translateY(150%);opacity:.5}}@keyframes imghvr-zoom-out-down{50%{-webkit-transform:scale(.8) translateY(0);transform:scale(.8) translateY(0);opacity:.5}100%{-webkit-transform:scale(.8) translateY(150%);transform:scale(.8) translateY(150%);opacity:.5}}.imghvr-zoom-out-left.hover img,.imghvr-zoom-out-left:hover img{-webkit-animation:imghvr-zoom-out-left .4s linear;animation:imghvr-zoom-out-left .4s linear;-webkit-animation-iteration-count:1;animation-iteration-count:1;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}@-webkit-keyframes imghvr-zoom-out-left{50%{-webkit-transform:scale(.8) translateX(0);transform:scale(.8) translateX(0);opacity:.5}100%{-webkit-transform:scale(.8) translateX(-150%);transform:scale(.8) translateX(-150%);opacity:.5}}@keyframes imghvr-zoom-out-left{50%{-webkit-transform:scale(.8) translateX(0);transform:scale(.8) translateX(0);opacity:.5}100%{-webkit-transform:scale(.8) translateX(-150%);transform:scale(.8) translateX(-150%);opacity:.5}}.imghvr-zoom-out-right.hover img,.imghvr-zoom-out-right:hover img{-webkit-animation:imghvr-zoom-out-right .4s linear;animation:imghvr-zoom-out-right .4s linear;-webkit-animation-iteration-count:1;animation-iteration-count:1;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards}@-webkit-keyframes imghvr-zoom-out-right{50%{-webkit-transform:scale(.8) translateX(0);transform:scale(.8) translateX(0);opacity:.5}100%{-webkit-transform:scale(.8) translateX(150%);transform:scale(.8) translateX(150%);opacity:.5}}@keyframes imghvr-zoom-out-right{50%{-webkit-transform:scale(.8) translateX(0);transform:scale(.8) translateX(0);opacity:.5}100%{-webkit-transform:scale(.8) translateX(150%);transform:scale(.8) translateX(150%);opacity:.5}}.imghvr-zoom-out-flip-horiz{-webkit-perspective:50em;perspective:50em}.imghvr-zoom-out-flip-horiz figcaption{opacity:0;-webkit-transform:rotateX(90deg) translateY(-100%) scale(.5);transform:rotateX(90deg) translateY(-100%) scale(.5)}.imghvr-zoom-out-flip-horiz.hover img,.imghvr-zoom-out-flip-horiz:hover img{-webkit-transform:rotateX(-100deg) translateY(50%) scale(.5);transform:rotateX(-100deg) translateY(50%) scale(.5);opacity:0;-webkit-transition-delay:0;transition-delay:0}.imghvr-zoom-out-flip-horiz.hover figcaption,.imghvr-zoom-out-flip-horiz:hover figcaption{-webkit-transform:rotateX(0) translateY(0) scale(1);transform:rotateX(0) translateY(0) scale(1);opacity:1;-webkit-transition-delay:.3s;transition-delay:.3s}.imghvr-zoom-out-flip-vert{-webkit-perspective:50em;perspective:50em}.imghvr-zoom-out-flip-vert figcaption{opacity:0;-webkit-transform:rotateY(90deg) translate(50%,0) scale(.5);transform:rotateY(90deg) translate(50%,0) scale(.5)}.imghvr-zoom-out-flip-vert.hover img,.imghvr-zoom-out-flip-vert:hover img{-webkit-transform:rotateY(-100deg) translateX(50%) scale(.5);transform:rotateY(-100deg) translateX(50%) scale(.5);opacity:0;-webkit-transition-delay:0;transition-delay:0}.imghvr-zoom-out-flip-vert.hover figcaption,.imghvr-zoom-out-flip-vert:hover figcaption{-webkit-transform:rotateY(0) translate(0,0) scale(1);transform:rotateY(0) translate(0,0) scale(1);opacity:1;-webkit-transition-delay:.3s;transition-delay:.3s}.imghvr-blur figcaption{opacity:0}.imghvr-blur:hover img{-webkit-filter:blur(30px);filter:blur(30px);-webkit-transform:scale(1.2);transform:scale(1.2);opacity:0}.imghvr-blur:hover figcaption{opacity:1;-webkit-transition-delay:.2s;transition-delay:.2s}[class*=' imghvr-blocks'] figcaption:after,[class*=' imghvr-blocks'] figcaption:before,[class*=' imghvr-blocks']:after,[class*=' imghvr-blocks']:before,[class^=imghvr-blocks] figcaption:after,[class^=imghvr-blocks] figcaption:before,[class^=imghvr-blocks]:after,[class^=imghvr-blocks]:before{background-color:#fff;opacity:0;position:absolute;content:''}[class*=' imghvr-blocks']:after,[class*=' imghvr-blocks']:before,[class^=imghvr-blocks]:after,[class^=imghvr-blocks]:before{z-index:1}[class*=' imghvr-blocks']:before,[class^=imghvr-blocks]:before{top:15px;right:15px;bottom:50%;left:50%}[class*=' imghvr-blocks']:after,[class^=imghvr-blocks]:after{bottom:15px;left:15px;top:50%;right:50%}[class*=' imghvr-blocks'] figcaption,[class^=imghvr-blocks] figcaption{z-index:3;background-color:transparent;border-width:0}[class*=' imghvr-blocks'] figcaption *,[class^=imghvr-blocks] figcaption *{opacity:0}[class*=' imghvr-blocks'] figcaption:after,[class*=' imghvr-blocks'] figcaption:before,[class^=imghvr-blocks] figcaption:after,[class^=imghvr-blocks] figcaption:before{height:50%;width:50%;z-index:-1}[class*=' imghvr-blocks'] figcaption:before,[class^=imghvr-blocks] figcaption:before{top:0;left:0}[class*=' imghvr-blocks'] figcaption:after,[class^=imghvr-blocks] figcaption:after{bottom:0;right:0}[class*=' imghvr-blocks'] a,[class^=imghvr-blocks] a{z-index:3}[class*=' imghvr-blocks']:hover figcaption:after,[class*=' imghvr-blocks']:hover figcaption:before,[class*=' imghvr-blocks']:hover:after,[class*=' imghvr-blocks']:hover:before,[class^=imghvr-blocks]:hover figcaption:after,[class^=imghvr-blocks]:hover figcaption:before,[class^=imghvr-blocks]:hover:after,[class^=imghvr-blocks]:hover:before{-webkit-transform:translate(0,0);transform:translate(0,0);opacity:.9}[class*=' imghvr-blocks']:hover figcaption *,[class^=imghvr-blocks]:hover figcaption *{opacity:1;-webkit-transition-delay:.25s;transition-delay:.25s}.imghvr-blocks-rotate-left:before{-webkit-transform:translateY(100%);transform:translateY(100%)}.imghvr-blocks-rotate-left:after{-webkit-transform:translateY(-100%);transform:translateY(-100%)}.imghvr-blocks-rotate-left figcaption:before{-webkit-transform:translateX(100%);transform:translateX(100%)}.imghvr-blocks-rotate-left figcaption:after,.imghvr-blocks-rotate-right:before{-webkit-transform:translateX(-100%);transform:translateX(-100%)}.imghvr-blocks-rotate-right:after{-webkit-transform:translateX(100%);transform:translateX(100%)}.imghvr-blocks-rotate-right figcaption:before{-webkit-transform:translateY(100%);transform:translateY(100%)}.imghvr-blocks-rotate-in-left:before,.imghvr-blocks-rotate-right figcaption:after{-webkit-transform:translateY(-100%);transform:translateY(-100%)}.imghvr-blocks-rotate-in-left:after{-webkit-transform:translateY(100%);transform:translateY(100%)}.imghvr-blocks-rotate-in-left figcaption:before{-webkit-transform:translateX(-100%);transform:translateX(-100%)}.imghvr-blocks-rotate-in-left figcaption:after,.imghvr-blocks-rotate-in-right:before{-webkit-transform:translateX(100%);transform:translateX(100%)}.imghvr-blocks-rotate-in-right:after{-webkit-transform:translateX(-100%);transform:translateX(-100%)}.imghvr-blocks-rotate-in-right figcaption:before{-webkit-transform:translateY(-100%);transform:translateY(-100%)}.imghvr-blocks-rotate-in-right figcaption:after{-webkit-transform:translateY(100%);transform:translateY(100%)}.imghvr-blocks-in:before{-webkit-transform:translate(100%,-100%);transform:translate(100%,-100%)}.imghvr-blocks-in:after{-webkit-transform:translate(-100%,100%);transform:translate(-100%,100%)}.imghvr-blocks-in figcaption:before{-webkit-transform:translate(-100%,-100%);transform:translate(-100%,-100%)}.imghvr-blocks-in figcaption:after{-webkit-transform:translate(100%,100%);transform:translate(100%,100%)}.imghvr-blocks-out:before{-webkit-transform:translate(-100%,100%);transform:translate(-100%,100%)}.imghvr-blocks-out:after{-webkit-transform:translate(100%,-100%);transform:translate(100%,-100%)}.imghvr-blocks-out figcaption:before{-webkit-transform:translate(100%,100%);transform:translate(100%,100%)}.imghvr-blocks-out figcaption:after{-webkit-transform:translate(-100%,-100%);transform:translate(-100%,-100%)}[class*=' imghvr-book-open-'] figcaption,[class^=imghvr-book-open-] figcaption{background-color:transparent;border:none;-webkit-perspective:50em;perspective:50em}[class*=' imghvr-book-open-'] figcaption *,[class^=imghvr-book-open-] figcaption *{opacity:0}[class*=' imghvr-book-open-'] figcaption:after,[class*=' imghvr-book-open-'] figcaption:before,[class^=imghvr-book-open-] figcaption:after,[class^=imghvr-book-open-] figcaption:before{z-index:-1;background-color:#999;content:'';position:absolute;opacity:0;-webkit-transition:all .45s ease;transition:all .45s ease}[class*=' imghvr-book-open-']:hover figcaption,[class^=imghvr-book-open-]:hover figcaption{opacity:1}[class*=' imghvr-book-open-']:hover figcaption *,[class^=imghvr-book-open-]:hover figcaption *{opacity:1;-webkit-transition-delay:.2s;transition-delay:.2s}[class*=' imghvr-book-open-']:hover figcaption:after,[class*=' imghvr-book-open-']:hover figcaption:before,[class^=imghvr-book-open-]:hover figcaption:after,[class^=imghvr-book-open-]:hover figcaption:before{opacity:1;background-color:#fff;-webkit-transform:rotateY(0);transform:rotateY(0)}.imghvr-book-open-horiz figcaption:after,.imghvr-book-open-horiz figcaption:before{height:100%;width:50%;top:0}.imghvr-book-open-horiz figcaption:before{background-image:-webkit-linear-gradient(left,transparent 60%,rgba(0,0,0,.1) 99%,rgba(0,0,0,.15) 100%);background-image:linear-gradient(to right,transparent 60%,rgba(0,0,0,.1) 99%,rgba(0,0,0,.15) 100%);left:0;-webkit-transform:rotateY(90deg);transform:rotateY(90deg);-webkit-transform-origin:100% 50%;-ms-transform-origin:100% 50%;transform-origin:100% 50%}.imghvr-book-open-horiz figcaption:after{background-image:-webkit-linear-gradient(right,transparent 60%,rgba(0,0,0,.12) 99%,rgba(0,0,0,.15) 100%);background-image:linear-gradient(to left,transparent 60%,rgba(0,0,0,.12) 99%,rgba(0,0,0,.15) 100%);right:0;-webkit-transform:rotateY(-90deg);transform:rotateY(-90deg);-webkit-transform-origin:0 50%;-ms-transform-origin:0 50%;transform-origin:0 50%}.imghvr-book-open-vert figcaption:after,.imghvr-book-open-vert figcaption:before{height:50%;width:100%;left:0}.imghvr-book-open-vert figcaption:before{background-image:-webkit-linear-gradient(top,transparent 60%,rgba(0,0,0,.1) 99%,rgba(0,0,0,.15) 100%);background-image:linear-gradient(to bottom,transparent 60%,rgba(0,0,0,.1) 99%,rgba(0,0,0,.15) 100%);top:0;-webkit-transform:rotateX(-90deg);transform:rotateX(-90deg);-webkit-transform-origin:50% 100%;-ms-transform-origin:50% 100%;transform-origin:50% 100%}.imghvr-book-open-vert figcaption:after{background-image:-webkit-linear-gradient(bottom,transparent 60%,rgba(0,0,0,.13) 99%,rgba(0,0,0,.15) 100%);background-image:linear-gradient(to top,transparent 60%,rgba(0,0,0,.13) 99%,rgba(0,0,0,.15) 100%);bottom:0;-webkit-transform:rotateX(90deg);transform:rotateX(90deg);-webkit-transform-origin:50% 0;-ms-transform-origin:50% 0;transform-origin:50% 0}[class*=' imghvr-scale-']:before,[class^=imghvr-scale-]:before{background-color:inherit;top:15px;bottom:15px;left:15px;right:15px;position:absolute;content:''}[class*=' imghvr-scale-'] figcaption,[class^=imghvr-scale-] figcaption{opacity:0}[class*=' imghvr-scale-']:hover:before,[class^=imghvr-scale-]:hover:before{top:15px;bottom:15px;left:15px;right:15px;opacity:.9}[class*=' imghvr-scale-']:hover figcaption,[class^=imghvr-scale-]:hover figcaption{opacity:1;-webkit-transition-delay:.25s;transition-delay:.25s}.imghvr-scale-top-left:before{bottom:100%;right:100%}.imghvr-scale-top-right:before{bottom:100%;left:100%}.imghvr-scale-bottom-left:before{top:100%;right:100%}.imghvr-scale-bottom-right:before{top:100%;left:100%}[class*=' imghvr-fall-away-'],[class^=imghvr-fall-away-]{-webkit-perspective:50em;perspective:50em}[class*=' imghvr-fall-away-'] img,[class^=imghvr-fall-away-] img{-webkit-transform-origin:50% 50%;-ms-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-transition:all .45s ease-in;transition:all .45s ease-in}[class*=' imghvr-fall-away-'] figcaption,[class*=' imghvr-fall-away-']:hover img,[class^=imghvr-fall-away-] figcaption,[class^=imghvr-fall-away-]:hover img{opacity:0}[class*=' imghvr-fall-away-']:hover figcaption,[class^=imghvr-fall-away-]:hover figcaption{opacity:1;-webkit-transition-delay:.45s;transition-delay:.45s}.imghvr-fall-away-horiz:hover img{-webkit-transform:rotateX(-360deg) scale(.2);transform:rotateX(-360deg) scale(.2)}.imghvr-fall-away-horiz:hover figcaption{-webkit-transform:rotateX(0);transform:rotateX(0)}.imghvr-fall-away-vert:hover img{-webkit-transform:rotateY(-360deg) scale(.2);transform:rotateY(-360deg) scale(.2)}.imghvr-fall-away-vert:hover figcaption{-webkit-transform:rotateX(0);transform:rotateX(0)}
+
+body {
+    background: linear-gradient(to left, #51cc48, #39df9c);
+    min-height: 100vh;
+}
+
+.width-auto {
+    width: auto;
+}
+
+.text-lg {
+    font-size: 2rem;
+}
+
+.carousel-indicators li {
+    border: none;
+    background: #ccc;
+}
+
+.carousel-indicators li.active {
+    background: #28a745;
+}
+
 </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+  /*ZoomIn Hover Effect*/
+  .hover-zoomin a {
+      display: block;
+      position: relative;
+      overflow: hidden;
+    }
+    .hover-zoomin img {
+      width: 100%;
+      height: auto;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+    }
+    .hover-zoomin:hover img {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+
+    /*Fade Hover Effect*/
+    .hover-fade a {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      background-color: #333;
+    }
+    .hover-fade .card {
+      width: 100%;
+      height: auto;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+    }
+    .hover-fade:hover .card {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0.5)";
+      filter: alpha(opacity=0.5);
+      opacity: 0.5;
+    }
+
+    /*ZoomIn Hover-Mask Effect*/
+    .hover-mask a {
+      display: block;
+      position: relative;
+      overflow: hidden;
+    }
+    .hover-mask img {
+      width: 100%;
+      height: auto;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+    }
+    .hover-mask:hover img {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+    .hover-mask a h2 {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      height: 100%;
+      width: 100%;
+      padding: 45% 20px;
+      text-align: center;
+      background-color: rgba(0,0,0,0.4);
+      -webkit-transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+      -o-transition: all 0.5s linear;
+      -ms-transition: all 0.5s linear;
+      transition: all 0.5s linear;
+      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      filter: alpha(opacity=0);
+      opacity: 0;
+    }
+    .hover-mask:hover a h2 {
+      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      filter: alpha(opacity=100);
+      opacity: 1;
+    }
+    .hover-mask .glyphicon {
+      -webkit-transform: scale(0);
+      -moz-transform: scale(0);
+      -o-transform: scale(0);
+      -ms-transform: scale(0);
+      transform: scale(0);
+      color: #fff;
+      -webkit-transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+      -o-transition: all 0.5s linear;
+      -ms-transition: all 0.5s linear;
+      transition: all 0.5s linear;
+      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      filter: alpha(opacity=0);
+      opacity: 0;
+    }
+    .hover-mask:hover .glyphicon {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -o-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+      -o-transition: all 0.5s linear;
+      -ms-transition: all 0.5s linear;
+      transition: all 0.5s linear;
+      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=1)";
+      filter: alpha(opacity=1);
+      opacity: 1;
+    }
+
+    /* Hover Blur Effect */
+    .text-white {
+      color: #fff;
+    }
+    .hover-blur a {
+      display: block;
+      position: relative;
+      overflow: hidden;
+    }
+    .hover-blur img {
+      width: 100%;
+      height: auto;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+    }
+    .hover-blur:hover img {
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+      -webkit-filter: grayscale(0.6) blur(1px);
+      filter: grayscale(0.6) blur(1px);
+    }
+    .hover-blur a h2 {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      height: 100%;
+      width: 100%;
+      padding: 45% 20px;
+      text-align: center;
+      background-color: rgba(0,0,0,0.5);
+      /*background dotted*/
+      background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.8), rgba(0,0,0,.8) 1px, transparent 1px, transparent 100%);
+      background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.8), rgba(0,0,0,.8) 1px, transparent 1px, transparent 100%);
+      background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.8), rgba(0,0,0,.8) 1px, transparent 1px, transparent 100%);
+      background-image: repeating-radial-gradient(center center, rgba(0,0,0,.8), rgba(0,0,0,.8) 1px, transparent 1px, transparent 100%);
+      -webkit-background-size: 3px 3px;
+      -moz-background-size: 3px 3px;
+      background-size: 3px 3px;
+      -webkit-transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+      -o-transition: all 0.5s linear;
+      -ms-transition: all 0.5s linear;
+      transition: all 0.5s linear;
+      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      filter: alpha(opacity=0);
+      opacity: 0;
+    }
+    .hover-blur:hover a h2 {
+      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      filter: alpha(opacity=100);
+      opacity: 1;
+    }
+    .hover-blur .text-white {
+      -webkit-transform: scale(0);
+      -moz-transform: scale(0);
+      -o-transform: scale(0);
+      -ms-transform: scale(0);
+      transform: scale(0);
+      -webkit-transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+      -o-transition: all 0.5s linear;
+      -ms-transition: all 0.5s linear;
+      transition: all 0.5s linear;
+      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      filter: alpha(opacity=0);
+      opacity: 0;
+    }
+    .hover-blur:hover .text-white {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -o-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+      -o-transition: all 0.5s linear;
+      -ms-transition: all 0.5s linear;
+      transition: all 0.5s linear;
+      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=1)";
+      filter: alpha(opacity=1);
+      opacity: 1;
+    }
+
+    /* Hover Zoomout */
+    .hover-zoomout a {
+      display: block;
+      position: relative;
+      overflow: hidden;
+    }
+    .hover-zoomout img {
+      width: 100%;
+      height: auto;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+    .hover-zoomout:hover img {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -o-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+    }
+
+/*Hover Blurout Effect*/
+    .hover-blurout a {
+      display: block;
+      position: relative;
+      overflow: hidden;
+    }
+    .hover-blurout img {
+      width: 100%;
+      height: auto;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+    .hover-blurout:hover img {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -o-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      /*Blur Filtr*/
+      -webkit-filter: grayscale(0.6) blur(1px);
+      -moz-filter: grayscale(0.6) blur(1px);
+      -o-filter: grayscale(0.6) blur(1px);
+      -ms-filter:progid:DXImageTransform.Microsoft.Blur(pixelRadius=2);
+      filter: progid:DXImageTransform.Microsoft.blur(pixelradius=2);
+      filter: grayscale(0.6) blur(2px);
+    }
+    .hover-blurout a h2 {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      height: 100%;
+      width: 100%;
+      padding: 45% 20px;
+      text-align: center;
+      background-color: rgba(0,0,0,0.4);
+      /*background dotted*/
+      background-image: -webkit-repeating-radial-gradient(center center, rgba(0,0,0,.8), rgba(0,0,0,.8) 1px, transparent 1px, transparent 100%);
+      background-image: -moz-repeating-radial-gradient(center center, rgba(0,0,0,.8), rgba(0,0,0,.8) 1px, transparent 1px, transparent 100%);
+      background-image: -ms-repeating-radial-gradient(center center, rgba(0,0,0,.8), rgba(0,0,0,.8) 1px, transparent 1px, transparent 100%);
+      background-image: repeating-radial-gradient(center center, rgba(0,0,0,.8), rgba(0,0,0,.8) 1px, transparent 1px, transparent 100%);
+      -webkit-background-size: 3px 3px;
+      -moz-background-size: 3px 3px;
+      background-size: 3px 3px;
+
+      -webkit-transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+      -o-transition: all 0.5s linear;
+      -ms-transition: all 0.5s linear;
+      transition: all 0.5s linear;
+      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      filter: alpha(opacity=0);
+      opacity: 0;
+    }
+    .hover-blurout:hover a h2 {
+      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+      filter: alpha(opacity=100);
+      opacity: 1;
+    }
+    .hover-blurout .glyphicon {
+      -webkit-transform: scale(0);
+      -moz-transform: scale(0);
+      -o-transform: scale(0);
+      -ms-transform: scale(0);
+      transform: scale(0);
+      color: #fff;
+      -webkit-transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+      -o-transition: all 0.5s linear;
+      -ms-transition: all 0.5s linear;
+      transition: all 0.5s linear;
+      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      filter: alpha(opacity=0);
+      opacity: 0;
+    }
+    .hover-blurout:hover .glyphicon {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -o-transform: scale(1);
+      -ms-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: all 0.5s linear;
+      -moz-transition: all 0.5s linear;
+      -o-transition: all 0.5s linear;
+      -ms-transition: all 0.5s linear;
+      transition: all 0.5s linear;
+      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=1)";
+      filter: alpha(opacity=1);
+      opacity: 1;
+    }
+/* ---------Hover Overlay text Effect--------- */
+
+    .overlay-item {
+       display: block;
+       position: relative;
+       overflow: hidden;
+       text-align: center;
+
+    }
+    .overlay-item .mask {
+       display: block;
+       position: absolute;
+       overflow: hidden;
+       top: 0;
+       left: 0;
+       height: 100%;
+    }
+    .overlay-item img {
+       display: block;
+       width: 100%;
+       height: auto;
+       x-margin-right: auto;
+       x-margin-left: auto;
+    }
+    .overlay-item h3 {
+       text-transform: uppercase;
+       text-align: center;
+       position: relative;
+       padding: 10px;
+       margin: 0px 0px 20px 0px;
+       display: block;
+       background-color: #333;
+       color: #fff;
+    }
+    .overlay-item p {
+       text-align: left;
+    }
+    .overlay-item a.btn {
+      margin: 10px 0;
+    }
+
+    .overlay-effect img {
+       -webkit-transform: scaleY(1);
+       -moz-transform: scaleY(1);
+       -o-transform: scaleY(1);
+       -ms-transform: scaleY(1);
+       transform: scaleY(1);
+       -webkit-transition: all 0.7s ease-in-out;
+       -moz-transition: all 0.7s ease-in-out;
+       -o-transition: all 0.7s ease-in-out;
+       -ms-transition: all 0.7s ease-in-out;
+       transition: all 0.7s ease-in-out;
+    }
+    .overlay-effect .mask {
+       background-color: rgba(255, 255, 255, 0.3);
+       -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+       -o-transition: all 0.5s linear;
+       -ms-transition: all 0.5s linear;
+       transition: all 0.5s linear;
+       -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+       filter: alpha(opacity=0);
+       opacity: 0;
+    }
+    .overlay-effect h3 {
+       -webkit-transform: scale(0);
+       -moz-transform: scale(0);
+       -o-transform: scale(0);
+       -ms-transform: scale(0);
+       transform: scale(0);
+       -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+       -o-transition: all 0.5s linear;
+       -ms-transition: all 0.5s linear;
+       transition: all 0.5s linear;
+       -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+       filter: alpha(opacity=0);
+       opacity: 0;
+    }
+    .overlay-effect p {
+       -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+       filter: alpha(opacity=0);
+       opacity: 0;
+       -webkit-transform: scale(0);
+       -moz-transform: scale(0);
+       -o-transform: scale(0);
+       -ms-transform: scale(0);
+       transform: scale(0);
+       -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+       -o-transition: all 0.5s linear;
+       -ms-transition: all 0.5s linear;
+       transition: all 0.5s linear;
+    }
+    .overlay-effect a.btn {
+       -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+       filter: alpha(opacity=0);
+       opacity: 0;
+       -webkit-transform: scale(0);
+       -moz-transform: scale(0);
+       -o-transform: scale(0);
+       -ms-transform: scale(0);
+       transform: scale(0);
+       -webkit-transition: all 0.5s linear;
+       -moz-transition: all 0.5s linear;
+       -o-transition: all 0.5s linear;
+       -ms-transition: all 0.5s linear;
+       transition: all 0.5s linear;
+    }
+    .overlay-effect:hover img {
+       -webkit-transform: scale(10);
+       -moz-transform: scale(10);
+       -o-transform: scale(10);
+       -ms-transform: scale(10);
+       transform: scale(10);
+       -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+       filter: alpha(opacity=0);
+       opacity: 0;
+    }
+    .overlay-effect:hover .mask {
+       -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+       filter: alpha(opacity=100);
+       opacity: 1;
+    }
+    .overlay-effect:hover h3,.overlay-effect:hover p,.overlay-effect:hover a.btn {
+       -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+       -o-transform: scale(1);
+       -ms-transform: scale(1);
+       transform: scale(1);
+       -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+       filter: alpha(opacity=100);
+       opacity: 1;
+    }
+/*Hover Fall Effect*/
+    .fall-item {
+       width: 100%;
+       height: auto;
+       overflow: hidden;
+       position: relative;
+       text-align: center;
+    }
+    .fall-item .mask,.fall-item .content {
+       width: 100%;
+       height: 100%;
+       position: absolute;
+       overflow: hidden;
+       top: 0;
+       left: 0;
+    }
+    .fall-item img {
+       display: block;
+       position: relative;
+       width: 100%;
+       height: auto;
+    }
+    .fall-item h2 {
+       text-transform: uppercase;
+       color: #fff;
+       text-align: center;
+       position: relative;
+       padding: 10px;
+       background: rgba(0, 0, 0, 0.8);
+       margin: 0 0 0 0;
+    }
+    .fall-item p {
+       font-style: italic;
+       position: relative;
+       color: #fff;
+       padding: 10px 20px 20px;
+       text-align: center;
+    }
+    .fall-effect .mask {
+       background-color: rgba(255, 255, 255, 0.7);
+       top: -200px;
+       -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+       filter: alpha(opacity=0);
+       opacity: 0;
+       -webkit-transition: all 0.3s ease-out 0.5s;
+       -moz-transition: all 0.3s ease-out 0.5s;
+       -o-transition: all 0.3s ease-out 0.5s;
+       -ms-transition: all 0.3s ease-out 0.5s;
+       transition: all 0.3s ease-out 0.5s;
+    }
+    .fall-effect h2 {
+       -webkit-transform: translateY(-200px);
+       -moz-transform: translateY(-200px);
+       -o-transform: translateY(-200px);
+       -ms-transform: translateY(-200px);
+       transform: translateY(-200px);
+       -webkit-transition: all 0.2s ease-in-out 0.1s;
+       -moz-transition: all 0.2s ease-in-out 0.1s;
+       -o-transition: all 0.2s ease-in-out 0.1s;
+       -ms-transition: all 0.2s ease-in-out 0.1s;
+       transition: all 0.2s ease-in-out 0.1s;
+    }
+    .fall-effect p {
+       color: #333;
+       -webkit-transform: translateY(-200px);
+       -moz-transform: translateY(-200px);
+       -o-transform: translateY(-200px);
+       -ms-transform: translateY(-200px);
+       transform: translateY(-200px);
+       -webkit-transition: all 0.2s ease-in-out 0.2s;
+       -moz-transition: all 0.2s ease-in-out 0.2s;
+       -o-transition: all 0.2s ease-in-out 0.2s;
+       -ms-transition: all 0.2s ease-in-out 0.2s;
+       transition: all 0.2s ease-in-out 0.2s;
+    }
+    .fall-effect a.btn {
+       -webkit-transform: translateY(-200px);
+       -moz-transform: translateY(-200px);
+       -o-transform: translateY(-200px);
+       -ms-transform: translateY(-200px);
+       transform: translateY(-200px);
+       -webkit-transition: all 0.2s ease-in-out 0.3s;
+       -moz-transition: all 0.2s ease-in-out 0.3s;
+       -o-transition: all 0.2s ease-in-out 0.3s;
+       -ms-transition: all 0.2s ease-in-out 0.3s;
+       transition: all 0.2s ease-in-out 0.3s;
+    }
+    .fall-effect:hover .mask {
+       -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+       filter: alpha(opacity=100);
+       opacity: 1;
+       top: 0px;
+       -webkit-transition-delay: 0s;
+       -moz-transition-delay: 0s;
+       -o-transition-delay: 0s;
+       -ms-transition-delay: 0s;
+       transition-delay: 0s;
+
+    }
+    .fall-effect:hover h2 {
+       -webkit-transform: translateY(0px);
+       -moz-transform: translateY(0px);
+       -o-transform: translateY(0px);
+       -ms-transform: translateY(0px);
+       transform: translateY(0px);
+       -webkit-transition-delay: 0.4s;
+       -moz-transition-delay: 0.4s;
+       -o-transition-delay: 0.4s;
+       -ms-transition-delay: 0.4s;
+       transition-delay: 0.4s;
+    }
+    .fall-effect:hover p {
+       -webkit-transform: translateY(0px);
+       -moz-transform: translateY(0px);
+       -o-transform: translateY(0px);
+       -ms-transform: translateY(0px);
+       transform: translateY(0px);
+       -webkit-transition-delay: 0.2s;
+       -moz-transition-delay: 0.2s;
+       -o-transition-delay: 0.2s;
+       -ms-transition-delay: 0.2s;
+       transition-delay: 0.2s;
+    }
+    .fall-effect:hover a.btn {
+       -webkit-transform: translateY(0px);
+       -moz-transform: translateY(0px);
+       -o-transform: translateY(0px);
+       -ms-transform: translateY(0px);
+       transform: translateY(0px);
+       -webkit-transition-delay: 0s;
+       -moz-transition-delay: 0s;
+       -o-transition-delay: 0s;
+       -ms-transition-delay: 0s;
+       transition-delay: 0s;
+    }
+
+
+</style>
+
+
+
 
 

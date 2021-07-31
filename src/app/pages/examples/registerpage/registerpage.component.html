@@ -184,14 +184,21 @@
                         <i class="tim-icons icon-paper"> </i>
                       </div>
                     </div>
-                    <input
+                    <!-- <input
                       class="form-control"
                       placeholder="Message"
-                      type="text"
-                       
+                      type="textarea"
+                      rows="4" cols="40" maxlength="100"
                       name="message"
                       [(ngModel)]="message"
-                    />
+                    /> -->
+                    <textarea
+                    class="form-control"
+                    placeholder="Message"
+                    [(ngModel)]="message"
+                    name="message"
+                    rows="4" cols="40" maxlength="100"
+                  ></textarea>
                   </div>
                   <div class="form-check text-left">
                     <label class="form-check-label">
