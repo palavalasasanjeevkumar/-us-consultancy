@@ -17,7 +17,7 @@ var app = express();
 let bodyParser = require('body-parser');
 
 // serve the files out of ./public as our main files
-app.use(express.static(__dirname + '/dist'));
+app.use(express.static(__dirname + '../../dist'));
 app.use(bodyParser.urlencoded({
   extended: true
 }));
@@ -66,5 +66,3 @@ app.get('/getData', (req, res) => {
 app.listen(6001, '0.0.0.0', function () {
   console.log("server starting on  http://localhost:6001/");
 });
-
-
