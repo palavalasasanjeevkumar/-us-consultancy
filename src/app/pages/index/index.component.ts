@@ -8,6 +8,11 @@ import { ServiceService } from '../../service.service';
 export class IndexComponent implements OnInit, OnDestroy {
  
   public name:any;
+  public doctarate = '../assets/img/doctarate.png';
+  public univerity1 = '../assets/img/u1.png';
+  public univerity2 = '../assets/img/u2.png';
+  public univerity3 = '../assets/img/u3.jpg';
+  public univerity4 = '../assets/img/u4.jpg';
   public phoneNumber:any;
   public emailid:any;
   public message:any;
